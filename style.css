@@ -1,0 +1,1670 @@
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: 'DM Sans', sans-serif;
+
+        }
+        
+        .smallhead{
+            background-color: #21357B;
+        }
+    
+        /* contacthead css  */
+        .contactheader {
+    font-size: 0.9rem; /* adjust as needed */
+}
+.contactnumber:hover{
+  color: #0868A0;
+}
+.contactemail:hover{
+  color: #0868A0;
+}
+
+
+/* Fullscreen Sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 2000;
+  transition: left 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.mobilebar{
+  height: 50px;
+}
+
+.mobilebarpic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-sidebar.active {
+  left: 0;
+}
+
+.sidebar-item {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar-item:hover {
+  background-color: #f8f9fa;
+}
+
+.sidebar-submenu li {
+  padding: 6px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-submenu li:last-child {
+  border: none;
+}
+
+.dropdown-icon {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+/* fullscreen dropdown  */
+
+
+.desktop-navbar {
+  width: 100%;
+  background: #fff;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.techlogo .logo-img {
+  height: 40px;
+}
+
+/* Menu Styling */
+.sub-menu {
+  gap: 25px;
+}
+
+.submenu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.submenu-item .dropdown-menu-custom {
+  position: absolute;
+  top: 30px;
+
+  left: -98px;
+  min-width: 600px;
+  background: #fff;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+}
+
+.submenu-item{
+  height: 35px;
+}
+
+.itemsh{
+  height: 35px;
+}
+.smallicon{
+  width: 20px;
+  height: 20px;
+margin-top: 5px;
+margin-right: 4px;
+}
+.fontsm{
+  font-size: 19px;
+}
+
+.orange-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* spacing between text and arrow */
+  transition: all 0.3s ease;
+}
+
+.arrbtn {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.orange-btn:hover .arrbtn {
+  transform: translateX(5px); /* move right */
+}
+
+.arrow-move {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.arrow-move span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.arrow-move:hover span {
+  transform: translateX(6px);
+}
+
+
+/* Down arrow rotation */
+.down-arrow {
+  margin-left: 5px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.submenu-item:hover .down-arrow {
+  transform: rotate(90deg);
+}
+
+/* Submenu links */
+.dropdown-menu-custom p {
+  display: flex;
+  align-items: center;
+
+  padding: 5px 0;
+}
+
+.dropdown-menu-custom p img {
+  width: 500px;
+  height: 20px;
+}
+.dropdowncustom2{
+  width: 600px;
+  position: absolute;
+  left: -350px;
+  background: white;
+  display: none;
+  border-radius: 12px;
+  
+}
+.subs:hover .dropdowncustom2{
+  top: 35px;
+display: block;
+}
+
+/* Responsive adjustments for medium screens */
+@media screen and (max-width: 992px) {
+  .desktop-navbar {
+    flex-wrap: wrap;
+  }
+  .sub-menu {
+    gap: 15px;
+  }
+  .dropdown-menu-custom {
+    min-width: 200px;
+  }
+}
+
+.dropdown-menu-custom{
+  position: absolute;
+  left: -300px !important;
+}
+
+
+
+.arr:hover::before{
+content: "-";
+display: block;
+}
+
+
+/* ADS SECTION */
+.adsbtn {
+  background-color: #007bff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.adsbtn:hover {
+  background-color: #0056b3;
+}
+
+.text-blue {
+  color: #0056b3;
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 991px) {
+  .header {
+    display: none !important;
+  }
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+
+
+
+/* Footer Buttons */
+.sidebar-footer {
+  background: #f8f9fa;
+}
+
+/* Responsive Hide Desktop Menu */
+@media (max-width: 767px) {
+  .menu.d-md-flex {
+    display: none !important;
+  }
+}
+
+
+
+/* --- Base Layout --- */
+.header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.techlogo img {
+  max-width: 160px;
+  height: auto;
+}
+
+/* Menu container */
+.menu {
+  justify-content: flex-end;
+}
+
+/* Submenu layout */
+.sub-menu p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.sub-menu p:hover {
+  color: #0056b3;
+}
+
+/* Dropdown icon (>) */
+.down-arrow {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+/* --- Dropdown Menus --- */
+.dropdown-menu-custom {
+  display: none;
+
+  left: -198px;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+
+
+
+
+.imgicon{
+  width: 25px;
+margin: 10px;
+}
+
+
+/* --- Ads Section inside dropdown --- */
+.adsbtn {
+  background-color: #0056b3;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.adsbtn:hover {
+  background-color: #003f85;
+}
+
+.text-blue {
+  color: #0056b3;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+/* --- Responsive Settings --- */
+
+/* For smaller screens (mobile & tablet) hide this header */
+@media (max-width: 991px) {
+  .header {
+    display: none !important;
+  }
+}
+
+/* For large screens ensure nice spacing */
+@media (min-width: 1200px) {
+  .sub-menu {
+    gap: 3rem;
+  }
+}
+
+
+
+
+
+
+        /* contacthead css end  */
+
+
+
+
+/* herosection  */
+
+
+
+/* clientsection css  */
+
+
+/* ✅ General container setup */
+.clienttestimonial {
+  width: 80vw;
+  margin: 0 auto;
+
+  border-radius: 20px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ✅ Left card */
+.testileft {
+  flex: 3;
+  min-width: 300px;
+  background: linear-gradient(to right, #0A6EA7, #67AA4D);
+  padding: 1.5rem;
+  width: 100%;
+}
+
+/* ✅ Swiper styling inside the testimonial */
+.testimonial-slider {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+    display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonialimage {
+  object-fit: contain;
+  border-radius: 50%;
+}
+.frame{
+  height: 150px;
+  width: 150px;
+border-radius: 90%;
+margin-left: 60px;
+}
+
+
+
+
+
+
+/* ✅ Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ✅ Right side image */
+.clienttestimonial .right {
+  flex: 1;
+  min-width: 400px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clienttestimonial .right img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+}
+
+/* ✅ Responsive layout */
+@media (max-width: 900px) {
+  .clienttestimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testileft,
+  .right {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .swiper-slide {
+    flex-direction: column;
+  }
+
+  .testimonialimage {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* clientsection end  */
+
+
+
+
+/* searchtrend card  */
+/* Slider wrapper - limit container width */
+.trend-slider-wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* Slider container */
+.trend-slider-container {
+  position: relative; /* for positioning arrows */
+}
+
+/* Each slide card */
+.trend-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Trend image */
+.trend-card .trendimg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Title and text */
+.trend-card .bannertitle {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.trend-card p {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Download button */
+.bannerbtn {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Swiper Navigation Buttons (outside) */
+.trend-nav {
+  background: white;
+  color: black;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev.trend-nav {
+  left: -50px;
+}
+
+.swiper-button-next.trend-nav {
+  right: -50px;
+}
+
+/* Disabled state */
+.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trend-slider-wrapper {
+    width: 95vw;
+  }
+  .swiper-slide {
+    width: 80%;
+  }
+  .swiper-button-prev.trend-nav {
+    left: -30px;
+  }
+  .swiper-button-next.trend-nav {
+    right: -30px;
+  }
+}
+
+/* Hover Zoom Effect on Trend Card Image */
+.trend-card .trendimg img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* smooth transition */
+}
+
+.trend-card .trendimg img:hover {
+  transform: scale(1.05); /* zoom in slightly on hover */
+  cursor: pointer;        /* optional: change cursor to pointer */
+}
+
+/* searchtrendcard end  */
+
+
+.callbtn button{
+    background-color: #0868A0;
+}
+
+.herosection{
+    background: url('./backgroundimg/banner_desk_bg.webp');
+    background-size: cover;
+}
+
+.reportcard{
+    background-color: #EDF8FF;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.contacthead{
+    background-color: #F6FBFD;
+}
+
+
+.callbtns{
+    width: 180px;
+display: flex;
+justify-content: center;
+align-items: center;
+    height: 35px;
+    border: none !important;
+}
+
+.callbtns:hover{
+    transition: background-color 0.4s;
+background-color: orangered;
+}
+.contactheader:hover{
+    color: #0888C7;
+}
+.techlogo{
+    margin-left: 80px;
+}
+
+
+
+
+header{
+    width: 100vw !important;
+}
+.down-arrow{
+    display: inline-block;
+    transform: rotate(90deg);
+    color: #e2d6d6;
+}
+.sub-menu :hover{
+color: #086FA9;
+cursor: pointer;
+
+}
+
+.submenu-item:hover .down-arrow{
+      display: inline-block;
+    transform: rotate(265deg);
+    color: #086FA9;
+transition: transform 0.5s;
+}
+
+.submenu-item {
+
+  transition: background-color 0.3s;
+}
+
+
+
+/* Dropdown menu styling */
+.dropdown-menu-custom {
+  display: none;
+position: absolute;
+  top: 100%; /* position below the item */
+  left: 0;
+background-color: white;
+  min-width: 650px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  z-index: 100;
+}
+
+/* Hover effect on dropdown items */
+
+
+/* Show dropdown on hover of parent item */
+.submenu-item:hover .dropdown-menu-custom {
+  display: block;
+}
+
+.dropdown1{
+    width: 700px;
+    height: 290px;
+
+
+}
+.dropdown2{
+      display: none;
+position: absolute;
+  top: 100%; /* position below the item */
+  left: -200px;
+background-color: white;
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  z-index: 100;
+    width: 600px;
+    height: 290px;
+
+
+}
+.adsblock{
+    background-color: #EBF6FD;
+}
+.text-blue{
+    color: #1F3F75;
+}
+.adsbtn{
+ width: 80%;
+ height: 40px;
+ background-color: #FF6600;
+ border: none;
+}
+.dropdown3{
+          display: none;
+position: absolute;
+  top: 100%; /* position below the item */
+  left: -300px;
+background-color: white;
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  z-index: 100;
+    width: 600px;
+    height: 290px;
+}
+
+
+
+
+/* body css effect  */
+/* hero section css  */
+
+.limegreen{
+    color: #739963;
+}
+.orange{
+    background-color: #FF6600;
+}
+.lightwhite{
+    background-color: #D7E5FF;
+}
+.herosection{
+    height: 80%;
+}
+.blue:hover{
+    color: #0868A9;
+    cursor: pointer;
+}
+.lightblue {
+    color: #136CA1;
+    font-size: 14px;
+    font-weight: 400;
+}
+.clientheader{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 45px;
+}
+.infohead{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.infosection{
+    margin-top: 24px;
+    background-color: #F7FBFD;
+width: 97vw;
+margin: auto;
+}
+.infotext{
+    font-size:16px;
+    line-height: 24px;
+}
+.hovergreen:hover{
+    background-color:#008080;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+   
+}
+
+.clientsection {
+  max-width: 90%;
+  margin: auto;
+}
+
+.logo-slider img {
+  max-width: 80px;
+  margin: auto;
+}
+
+.flat-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 4px;
+  border-radius: 0;
+  background: #007bff;
+  opacity: 0.6;
+  margin: 2px;
+}
+
+.flat-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.infosection {
+  max-width: 90%;
+  margin: auto;
+}
+
+.service-tab.active {
+  background-color: #32CD32; /* limegreen */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.service-tab {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .infosection {
+    padding: 1rem;
+  }
+
+  .service-tab {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+.swiper {
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  width: auto; /* adjust to content */
+  white-space: nowrap;
+}
+
+.service-tab {
+  cursor: pointer;
+  text-align: center;
+}
+
+/* herosection and section css end  */
+
+
+/* videos css start  */
+.videosection{
+    margin-top: 30px;
+}
+.videotitle{
+    font-size: 40px;
+    font-weight: 700;
+}
+.homevideo{
+    margin-top: 20px;
+    width: 90%;
+
+}
+.vid{
+    width: 70%;
+    border-radius: 30px;
+}
+.vidtext{
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 12px;
+}
+.vidbtn{
+    background-color: #FF6600;
+    border: none;
+    margin-bottom: 40px;
+}
+.gray{
+    color: #3B3B3B;
+}
+
+/* servicesection css  */
+.servicesection{
+    width: 98vw;
+    background-color: #FCFCFF;
+    
+}
+.servicetitle{
+    font-size: 40px;
+    font-weight: 700;
+}
+.servicelistext{
+font-size:25px ;
+font-weight: bolder;
+}
+.servicesliderliste{
+    width: 35%;
+    border: 1px solid black;
+    
+    border-radius: 12px;
+}
+.servicelogo{
+    width: 55px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+}
+.servicebtn{
+margin-top: 12px;
+background-color:#FF6600 ;
+border: none;
+color: white;
+margin-left: 12px;
+}
+.serviceright{
+    height: 90%;
+}
+.sliderservice{
+    height: 90%;
+    padding: 20px;
+}
+.whiteborder{
+  border: 1px solid #cbe5ff;
+}
+
+
+/* Service section */
+.servicesection {
+  flex-wrap: wrap;
+}
+
+/* Left side small icons */
+.service-icon {
+  width: 30px;
+  height: auto;
+}
+
+/* Cards container */
+.sliderservice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch; /* make all cards equal height */
+}
+
+/* Cards */
+.servicesliderliste {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 300px; /* fixed width */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.servicesliderliste:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Card icons */
+.card-icon {
+  width: 45px; /* smaller icon */
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Speak to Expert button */
+.speak-btn {
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.speak-btn .arrow {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.speak-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sliderservice {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesliderliste {
+    width: 90%;
+  }
+}
+
+
+
+/* Cards container */
+.sliderservice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch; /* keeps cards same height based on content */
+}
+
+/* Cards */
+.servicesliderliste {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 300px; /* fixed width */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* Removed any min-height or fixed height */
+}
+
+
+/* award css  */
+.awardtitle {
+    font-size: 40px;
+}
+.font-bold{
+    font-weight: 900;
+}
+.orangelight{
+    background-color: #FF6600;
+}
+
+
+.awards-container {
+  width: 85vw;
+  margin: auto;
+}
+
+.award-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+  background: #fff;
+  min-height: 120px;
+}
+
+.icon-wrapper img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Responsive grid inside swiper slide */
+@media (max-width: 768px) {
+  .award-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .icon-wrapper img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-container {
+    width: 95vw;
+  }
+}
+
+
+/* reportcard css  */
+.reportimg{
+right: 0;
+top: -50px;
+    
+}
+.reportcard{
+    width: 90%;
+    height: 30vh;
+}
+
+.reporttitle{
+    font-size: 32px;
+    font-weight: 700;
+}
+.reportbtn{
+    background-color: #fc6500;
+}
+/* Card styling */
+.swiper-slide {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:active {
+  cursor: pointer;
+}
+
+.borderlight {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+/* Custom pagination rectangles */
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 3px;
+  margin: -12px 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+
+  background: green;
+}
+
+/* Optional hover effect for cards */
+.featured-section {
+  width: 80vw;
+  margin: auto;
+}
+
+.featuredlogo img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%); /* Optional: clean brand look */
+  transition: filter 0.3s ease;
+}
+
+.featuredlogo img:hover {
+  filter: grayscale(0%); /* Optional hover effect */
+}
+
+/* ✅ Tablet */
+@media (max-width: 992px) {
+  .featuredlogo img {
+    width: 100px;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 600px) {
+  .featuredlogo {
+    gap: 20px;
+  }
+  .featuredlogo img {
+    width: 80px;
+  }
+}
+
+/* ✅ Small Mobile */
+@media (max-width: 400px) {
+  .featuredlogo img {
+    width: 70px;
+  }
+}
+
+
+
+
+/* Make carousel arrows black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Converts white icon to black */
+}
+
+/* Optional: Add a subtle shadow to borders */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.col-md-6 {
+  border-color: #3B3B3B; /* Ensure all borders are the color you want */
+}
+
+/* Optional: Make carousel images fit nicely */
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel-item{
+    width: 100%;
+}
+.item1{
+    width: 90%;
+    display: flex;
+    margin-left: 10px;
+}
+.statlogo{
+    height: 30%;
+    
+}
+.statpara{
+    font-size:16px ;
+}
+
+/* Default: small screens (<768px) */
+.reportcard {
+  height: auto; /* auto height for small screens */
+}
+
+/* Medium and above screens (≥768px) */
+
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 8px;
+  background-color: white; /* not active */
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #28a745; /* green active */
+  border-color: #28a745;
+}
+
+/* Remove grab cursor */
+.swiper {
+  cursor: default !important;
+}
+
+/* Responsive: vertical stacking below md */
+@media (max-width: 767px) {
+  .swiper-slide .row {
+    flex-direction: column !important;
+  }
+  .swiper-slide img {
+    max-height: 300px;
+    margin-top: 15px;
+  }
+}
+
+
+/* testimonial css  */
+
+.testileft{
+    background-color: #58a15f;
+    width: 45%;
+}
+.testimonialimage{
+    width: 140px;
+    height: 80px;
+}
+
+.trendimg{
+    width: 95%;
+    margin: auto;
+    margin-top: 12px;
+    border-radius: 12px;
+}
+
+.bannerbtn{
+    font-size: 14px;
+    border:1px solid #576e97;
+}
+.bannertitle{
+    background-color:#f4fafd;
+    color: #3685b3;
+}
+
+
+/* latest blog css  */
+
+
+.blogcontain{
+  width: 80vw ;
+
+
+   margin: auto;
+   display: flex;
+}
+
+.leftblog{
+  width: 40%;
+
+}
+
+.rightblog{
+  width: 60%;
+  
+}
+.rightblogimg{
+  width: 40%;
+}
+.blogren{
+  color: #9AC57E;
+}
+
+.blogcontain{
+  width: 70%;
+  display: flex;
+}
+.rightblogimg{
+overflow: hidden;
+}
+.rightblogimg :hover{
+transition-property: all;
+transition-duration: 0.5s;
+  transform: scale(1);
+  
+}
+.borderlight{
+  border: 2px solid #CBE5FF;
+}
+/* Grid layout for desktop */
+
+
+
+
+/* faq  */
+
+
+/* FAQ Category Tabs */
+.faq-container {
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+/* Single icon + or – */
+.faq-item .icon::before {
+  content: "+";
+  color: #000;
+}
+
+.faq-item.active .icon::before {
+  content: "–";
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: all 0.35s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px; /* adjust if answer is longer */
+  opacity: 1;
+  padding: 15px;
+}
+
+
+
+/* techmagnet news css  */
+
+/* News Image Zoom */
+.news-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: news card hover shadow */
+.news-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Text styling */
+.news-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.news-text strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* contact info css properties  */
+
+/* === ICONS === */
+.icon {
+  color: #157576;
+  min-width: 20px;
+}
+
+.d-flex.gap-3 {
+  gap: 12px !important;
+}
+
+/* === CORPORATE OFFICE BUTTON === */
+.corporate-btn {
+  border-style: dotted !important;
+  border-color: #3c346b !important;
+  color: #3c346b !important;
+  transition: 0.3s ease;
+}
+
+.corporate-btn:hover {
+  border-color: #a5c8dc !important;
+  color: #3c346b !important;
+  background-color: transparent !important;
+}
+
+/* === GET DIRECTION BUTTON === */
+.direction-btn {
+  border-color: #3c346b !important;
+  color: #3c346b !important;
+  transition: all 0.3s ease;
+}
+
+.direction-btn .arrow-move {
+  color: #3c346b;
+  transition: transform 0.3s ease;
+}
+
+.direction-btn:hover .arrow-move {
+  transform: translateX(6px);
+}
+
+/* === VIEW ALL LINK === */
+.view-all {
+  color: #008080;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.view-all i {
+  color: #008080;
+  transition: transform 0.3s ease;
+}
+
+.view-all:hover i {
+  transform: translateX(4px);
+}
+
+/* === TERMS OF SERVICE TEXT === */
+.tos-link {
+  color: #21357b;
+  font-weight: 600;
+}
+
+/* === CUSTOM CHECKBOX === */
+.custom-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #0079bf;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  color: #0079bf;
+  font-size: 14px;
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 768px) {
+  .first {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  .direction-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+/* footer css properties  */
+
+/* Footer Background & Text */
+.footer {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  font-family: 'Arial', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/* Links */
+.footer a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #FFD700; /* gold highlight on hover */
+}
+
+/* CTA Button */
+.btn-cta {
+  background-color: #FFD700;
+  color: #1c1c1c;
+  border: none;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Divider */
+.footer-divider {
+  border-top: 1px solid #444;
+}
+
+/* Footer Logo & Partners */
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-partners img {
+  height: 35px;
+}
+
+/* Footer Columns */
+.footer-links h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Bottom Footer */
+.bottom-footer p {
+  font-size: 14px;
+}
+
+.footer-bottom-links a {
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .top-footer, .bottom-footer {
+    text-align: center;
+  }
+  .btn-cta {
+    margin-bottom: 15px;
+  }
+  .footer-links {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width:892px) {
+  .testileft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .frame{
+    margin-left: 190px;
+  }
+  
+}

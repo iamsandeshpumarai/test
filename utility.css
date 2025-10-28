@@ -1,0 +1,44 @@
+.w100{
+    width: 100vw;
+}
+
+.w50{
+    width: 50vw;
+}
+.w97{
+    width: 97vw;
+}
+.semititle{
+    font-size:24px;
+}
+.para{
+    font-size: 16px;
+}
+
+.lightblue{
+    background-color: #F5FAFD;
+}
+.font-big{
+    font-size: 40px;
+}
+.font-small{
+    font-size: 16px;
+}
+.font-medium{
+    font-size: 24px;
+}
+.w95{
+    width: 95vw;
+}
+main{
+    width: 95vw;
+    margin: auto;
+    border: 2px solid black;
+    overflow-x: hidden;
+}
+.w-45{
+    width: 45%;
+}
+.h100{
+    height: 100%;
+}
