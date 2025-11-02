@@ -1,1570 +1,2840 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <title>TechMagnet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <title>TechMagnet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 
-<!-- Bootstrap JS (Bundle includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-/>
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./utility.css">
+  <!-- Bootstrap JS (Bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mark.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
-<body>
 
-    <header>
-<!-- contacthead  -->
-       <div class="contacthead d-none d-md-flex align-items-center justify-content-end  p-2">
-    <div class="contact d-flex gap-4 align-items-center">
+<body>
+  <!-- fixed element  -->
+  <div class="sidefixed d-none d-md-flex justify-content-evenly align-items-center">
+    <p class="mt-3 ">Hit To <br>Expand </p>
+    <p class="mt-3 fixedmovearrow fs-2">&rightarrow;</p>
+  </div>
+
+
+  <!-- fixed element  -->
+  <div class="fixedtabs">
+    <div class="position-relative"><img src="./fixedimage/request-call-img.webp" alt="">
+      <div class="closefaq"><img src="./fixedimage/faq-close.png" alt=""></div>
+    </div>
+    <p class="text-center">Grow Your Leads & Sales by 10X with our Digital Marketing services</p>
+    <button class="px-3 py-2 border-0 rounded-5 orangebtn ms-4 mb-1">Request a Call <span>&rightarrow;</span> </button>
+  </div>
+
+  <!-- footer element when the the screen is small  -->
+  <div class="fixedfooter">
+    <div class="row">
+      <div class="col-4 ">
+        <button class=" fixedcallbtn m-2 P-3 ">Call Us <img src="./fixedfooterbtn/call-m.webp" alt=""></button>
+      </div>
+      <div class="col-4">
+        <button class="fixedemailbtn m-2 P-3">Email Us <img src="./fixedfooterbtn/mail-m.webp" alt=""></button>
+      </div>
+      <div class="col-4 ml-2 ">
+        <button class="fixedwhatsappbtn m-2 P-3">Whatsapp <img src="./fixedfooterbtn/whatsapp-m.webp" alt=""></button>
+      </div>
+    </div>
+  </div>
+  <!-- end of fixed element  -->
+  <header>
+    <!-- contacthead  -->
+    <div class="contacthead w90 d-flex align-items-center justify-content-end stickydiv ">
+      <div class="contact d-flex gap-4 align-items-center">
 
         <!-- WhatsApp Number -->
         <div class="contactnumber">
-            <a href="https://wa.me/919910308266" target="_blank" class="cursor-pointer contactheader text-decoration-none text-dark d-flex align-items-center">
-                <span class="logo me-1">
-                    <img src="./icon/headericon.png" alt="">
-                </span>
-                <span class="contactnumber">+91-9910308266</span>
-            </a>
+          <a href="https://wa.me/919910308266" target="_blank"
+            class="cursor-pointer contactheader text-decoration-none text-dark d-flex align-items-center">
+            <span class="logo me-1">
+              <img src="./icon/headericon.png" alt="">
+            </span>
+            <span class="contactnumber">+91-9910308266</span>
+          </a>
         </div>
 
         <!-- Email -->
         <div class="email">
-            <a href="mailto:enquiry@techmagnate.com" class="hover-text cursor-pointer contactheader text-decoration-none text-dark d-flex align-items-center">
-                <span class="me-1">
-                    <img src="./icon/messageicon.png" alt="">
-                </span>
-                <span class="contactemail">enquiry@techmagnate.com</span>
-            </a>
+          <a href="mailto:enquiry@techmagnate.com"
+            class="hover-text cursor-pointer contactheader text-decoration-none text-dark d-flex align-items-center">
+            <span class="me-1">
+              <img src="./icon/messageicon.png" alt="">
+            </span>
+            <span class="contactemail">enquiry@techmagnate.com</span>
+          </a>
         </div>
 
         <!-- Request Call Button -->
-        <div class="callbtn me-2">
-            <button class="callbtns p-2 text-white">
-                Request a Call &rarr;
+        <div class="callbtn ">
+          <button class="callbtns  text-white">
+            Request a Call &rarr;
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- end of contacthead  -->
+
+
+    <!-- Desktop Menu -->
+
+    <div class="desktop-navbar w90   align-items-center justify-content-between px-3 py-2">
+
+      <!-- Logo -->
+      <div class="techlogo d-flex align-items-center">
+        <img src="./techlogo.svg" alt="Techmagnet Logo" class="logo-img">
+      </div>
+
+      <!-- Menu -->
+      <div class="menu d-flex align-items-center ">
+        <div class="sub-menu d-flex gap-4 align-items-center  d-lg-flex ">
+
+          <!-- Company Dropdown -->
+          <div class="submenu-item position-relative ">
+            <p class="submenu-toggle">Company<span class="down-arrow">&#x3E;</span></p>
+            <div class="dropdown-menu-custom  dropdown borderlight">
+              <div class="row">
+                <div class="col-md-5 d-flex flex-column text-black">
+
+                  <div class="d-flex">
+                    <div class="ms-3 mt-3"><img src="./icon/about-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="m-0 mt-3">About Us</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="ms-3 mt-3"><img src="./icon/news-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="m-0 mt-3">Press Release</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="ms-3 mt-3"><img src="./icon/career-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="m-0 mt-3">Careers</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="ms-3 mt-3"><img src="./icon/best-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="m-0 mt-3">Best Place Work</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="ms-3 mt-3"><img src="./icon/award-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="m-0 mt-3">Award Recognition</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 d-flex flex-column justify-content-center align-items-center border-0 content-right ">
+                  <div class="text-center">
+                    <p class="text-blue fw-semibold">Get the most Valuable Search <br> Insight for Your Industry </p>
+                    <button class="adsbtn rounded-5 text-white arrow-move px-3">Download Report
+                      <span>&rightarrow;</span></button>
+                  </div>
+                  <img class="mt-2" src="./headeradsimg/str-menu.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Services -->
+          <div class="submenu-item position-relative">
+            <p class="submenu-toggle">Our Service<span class="down-arrow">&#x3E;</span></p>
+            <div class="dropdowncustom2 dropdown borderlight ">
+              <div class="row">
+                <div class="d-flex text-black">
+                  <div
+                    class="d-flex border   justify-content-center align-content-center submenuborderlight submenu-left-item gap-2"
+                    data-target="seo">
+                    <div class="ms-1"><img src="./Submenuicon/Ourservice/seo-menu-icon.webp" alt=""></div>
+                    <p class="">Search Engine <br> Optimization</p>
+                  </div>
+
+                  <div
+                    class="d-flex gap-2 border justify-content-center align-content-center submenuborderlight  submenu-left-item"
+                    data-target="digital">
+                    <div class="ms-2"><img src="/Submenuicon/Ourservice/digital-menu-icon.webp" alt=""></div>
+                    <p class="m-0">Digital Marketing</p>
+                  </div>
+
+                  <div
+                    class="d-flex gap-2 border justify-content-center align-content-center submenuborderlight  submenu-left-item"
+                    data-target="app">
+                    <div class="ms-1"><img src="./Submenuicon/Ourservice/app-menu-icon.webp" alt=""> </div>
+                    <p class="mt-2">App Marketing</p>
+                  </div>
+
+                  <div
+                    class="d-flex border justify-content-center align-content-center submenuborderlight gap-2 submenu-left-item"
+                    data-target="content">
+                    <div class="ms-2">
+                      <img src="./Submenuicon/Ourservice/content-menu-icon.webp" alt="">
+                    </div>
+                    <p>Content Marketing</p>
+                  </div>
+
+
+                  <div
+                    class="d-flex border justify-content-center align-content-center submenuborderlight submenu-left-item gap-2"
+                    data-target="paid">
+                    <div class="ms-2"><img src="./Submenuicon/Ourservice/Paid-marketing.svg" alt=""></div>
+                    <p class="">PPC/Paid Marketing</p>
+                  </div>
+
+                  <div
+                    class="d-flex border justify-content-center gap-1 align-content-center submenuborderlight submenu-left-item"
+                    data-target="martech">
+                    <div class="ms-3">
+                      <img src="./Submenuicon/Ourservice/martech-menu.webp" alt="">
+                    </div>
+                    <p class="">MarTech/Data Analytics</p>
+                  </div>
+                </div>
+
+                <div class="col-md-8 flex-column  m-1">
+                  <div class=" seomenu overflow-hidden rounded-4  m-4">
+                    <!-- content start for seo  -->
+                    <div class="submenu-content" data-content="seo">
+                      <p class="ms-3  mt-3 fw-bolder text-black"> Search Engine Optimization</p>
+                      <div class="row   subcontents">
+
+                        <div class="col-4 seomenu ">
+                          <p class="sidebartexts">SEO Services
+                          </p>
+                          <p class="sidebartexts">
+                            Enterprise SEO
+                          </p>
+                          <p class="sidebartexts">
+                            SEO Migration Services
+                          </p>
+                          <p class="sidebartexts">
+                            Vernacular SEO Services
+                          </p>
+                          <p class="sidebartexts">
+                            SEO Audit
+                          </p>
+                          <p class="sidebartexts">
+                            Google Penalty
+                          </p>
+                        </div>
+                        <div class="col-4">
+                          <p class="sidebartexts">AI SEO</p>
+                          <p class="sidebartexts">Ecommerce SEO</p>
+                          <p class="sidebartexts">Javascript SEO</p>
+                          <p class="sidebartexts">Multilingual SEO</p>
+                          <p class="sidebartexts">SEO Reseller Services</p>
+                        </div>
+
+                        <div class="col-4">
+                          <p class="sidebartexts">LLM Optimization</p>
+                          <p class="sidebartexts">Technical SEO</p>
+                          <p class="sidebartexts">Local SEO</p>
+                          <p class="sidebartexts">Link Building Services</p>
+                          <p class="sidebartexts">HyperLocal Marketing</p>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+                    <!-- content end here for seo  -->
+
+                    <!-- digital marketing menu start  -->
+
+                    <div class="submenu-content" data-content="digital">
+                      <p class="ms-3 mt-3 fw-bolder text-black">Digital Marketing</p>
+                      <div class="row">
+
+                        <div class="col-5 seomenu">
+                          <p class="sidebartexts">Digital Marketing Services </p>
+                          <p class="sidebartexts">
+                            AI Digital Marketing Services
+                          </p>
+
+
+                        </div>
+                        <div class="col-4">
+                          <p class="sidebartexts">ORM Services</p>
+                          <p class="sidebartexts">Youtube Video Marketing</p>
+
+                        </div>
+
+                        <div class="col-3">
+                          <p class="sidebartexts">Affiliate Marketing</p>
+                          <p class="sidebartexts">Email Marketing</p>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                    <!-- digital marketing menu end  -->
+
+
+                    <!-- start of app marketing  -->
+                    <div class=" d-none submenu-content" data-content="app">
+                      <p class="ms-3  mt-3 fw-bolder text-black" data-content="app">App Marketing</p>
+                      <div class="row">
+
+
+                        <div class="col-3 seomenu">
+                          <p class="sidebartexts">ASO Services</p>
+
+
+
+                        </div>
+                        <div class="col-5">
+                          <p class="sidebartexts">Mobile App Marketing Services</p>
+
+                        </div>
+
+                        <div class="col-2">
+                          <p class="sidebartexts">App CRO</p>
+
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <!-- end of app marketing  -->
+
+                    <!-- content marketing  -->
+                    <div class="d-none submenu-content" data-content="content">
+                      <p class="ms-3  mt-3 fw-bolder text-black" data-content="content">Content Marketing</p>
+                      <div class="row">
+
+                        <div class="col-4 seomenu">
+                          <p class="sidebartexts">Content Marketing Services</p>
+                          <p class="sidebartexts">Digital PR</p>
+                        </div>
+                        <div class="col-3">
+                          <p class="sidebartexts">Guest Posting</p>
+                          <p class="sidebartexts">SEO Copywriting</p>
+
+                        </div>
+
+                        <div class="col-4">
+                          <p class="sidebartexts">Content Writing Services</p>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    <!-- content marketing end  -->
+
+                    <!-- PPC/Paid Marketing  -->
+                    <div class="d-none submenu-content" data-content="paid">
+                      <p class="ms-3  mt-3 fw-bolder text-black " data-content="paid">Paid Marketing</p>
+                      <div class="row">
+
+
+                        <div class="col-4 seomenu">
+                          <p class="sidebartexts">PPC Services</p>
+                          <p class="sidebartexts">PPC Reseller Service</p>
+                        </div>
+                        <div class="col-5">
+                          <p class="sidebartexts">Mobile Advertising Services</p>
+                          <p class="sidebartexts">Social Media Advertising</p>
+
+                        </div>
+
+                        <div class="col-3">
+                          <p class="sidebartexts">Amazon Advertising</p>
+
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- Paid Marketing  -->
+
+
+                    <!-- market technology /data analytics  -->
+
+                    <div class="row d-none submenu-content" data-content="martech">
+                      <p class="ms-3  mt-3 fw-bolder text-black " data-content="martech">Market Technology/Data
+                        Analytics</p>
+                      <div class="row">
+
+                        <div class="col-4 seomenu">
+                          <p class="sidebartexts">CRO Services</p>
+                          <p class="sidebartexts">Shopify CRO</p>
+                          <p class="sidebartexts">B2B CRO</p>
+                        </div>
+                        <div class="col-5">
+                          <p class="sidebartexts">Ecommerce CRO</p>
+                          <p class="sidebartexts">Martech Services</p>
+
+                        </div>
+
+                        <div class="col-3">
+                          <p class="sidebartexts">GA 4 Consulting</p>
+                          <p class="sidebartexts">CDP Services</p>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- end of market tech  -->
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-3 d-flex flex-column h-90 mt-4 justify-content-center align-items-center  content-right">
+                  <div class="text-center ">
+                    <p class="text-blue fw-semibold">3X Organic Growth Delivered – Explore Our Digital Report Card for
+                      FY25</p>
+                    <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
+                  </div>
+                  <img class="mt-2" src="./submenulogo/Mega-Menu-Service.png" alt="">
+                </div>
+              </div>
+              <!-- dropdown custom end here  -->
+            </div>
+          </div>
+
+
+
+          <!-- Our Work Dropdown -->
+          <div class="submenu-item position-relative ">
+            <p class="submenu-toggle">Our Work<span class="down-arrow">&#x3E;</span></p>
+            <div class="workmenu dropdown borderlight">
+              <div class="row">
+                <div class="col-md-5 d-flex flex-column text-black">
+                  <div class="d-flex m-2">
+                    <div class=""><img src="./submenulogo/Portfolio.svg" class="imgicon" alt=""></div>
+                    <p class="mt-2">Portfolio</p>
+                  </div>
+
+                  <div class="d-flex m-2">
+                    <div class=""><img src="./submenulogo/testi-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="mt-2">Testimonials</p>
+                  </div>
+                  <div class="d-flex m-2">
+                    <div class=""><img src="./submenulogo/case-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="mt-2">Case Studies</p>
+                  </div>
+
+                </div>
+                <div class="col-md-6 d-flex mt-3 flex-column justify-content-center align-items-center content-right ">
+                  <div class="text-center ">
+                    <p class="text-blue fw-semibold">3X Organic Growth Delivered -<br> Explore Our Digital Report Card
+                      <br>for FY25 </p>
+                    <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
+                  </div>
+                  <img class="" src="./submenulogo/drc-menu.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Industry -->
+          <div class="submenu-item position-relative">
+            <p class="submenu-toggle">Industry<span class="down-arrow">&#x3E;</span></p>
+            <div class="dropdown industrydropdown  borderlight">
+              <div class="row">
+                <div class="col-md-5 d-flex flex-column text-black gap-2">
+                  <div class="d-flex ms-2">
+                    <div class=""><img src="./submenulogo/bfsi.svg" class="imgicon" alt=""></div>
+                    <p class="mt-2">BFSI</p>
+                  </div>
+                  <div class="d-flex ms-2">
+                    <div class=""><img src="./submenulogo/b2b-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="mt-2">B2B</p>
+                  </div>
+                  <div class="d-flex ms-2">
+                    <div class=""><img src="./submenulogo/Education.webp" class="imgicon" alt=""></div>
+                    <p class="mt-2">Education</p>
+                  </div>
+                  <div class="d-flex ms-2">
+                    <div class=""><img src="./submenulogo/Healthcare.webp" class="imgicon" alt=""></div>
+                    <p class="mt-2">HealthCare</p>
+                  </div>
+                  <div class="d-flex ms-2">
+                    <div class=""><img src="./submenulogo/cart.svg" class="imgicon" alt=""></div>
+                    <p class="mt-2">E-Commerce</p>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mt-3 d-flex flex-column justify-content-center align-items-center  content-right">
+                  <div class="text-center">
+                    <p class="text-blue fw-semibold">3X Organic Growth Delivered -<br> Explore Our Digital Report Card
+                      <br>for FY25 </p>
+                    <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
+
+                  </div>
+                  <img class="mt-2" src="./headeradsimg/str-menu.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Insights -->
+          <div class="submenu-item position-relative subs">
+            <p class="submenu-toggle p-2">Insights<span class="down-arrow">&#x3E;</span></p>
+            <div class="dropdown insightdropdown borderlight">
+              <div class="row mt-2">
+                <div class="col-md-5 d-flex flex-column text-black ">
+                  <div class="d-flex">
+                    <div class=""><img src="./submenulogo/digi-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="ms-3 mt-2">Digital Report Card</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class=""><img src="./submenulogo/search-menu-icon.webp" class="imgicon" alt=""></div>
+                    <p class="ms-3 mt-2">Search Trends Reports</p>
+                  </div>
+
+
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center content-right ">
+                  <div class="text-center">
+                    <p class="text-blue ">3X Organic Growth Delivered -<br> Explore Our Digital Report Card <br>for FY25
+                    </p>
+                    <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
+                  </div>
+                  <img class="mt-2" src="./submenulogo/drc-menu.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Blog & Contact -->
+          <div class="submenu-item6  ">
+            <p>Blog</p>
+          </div>
+          <div class="submenu-item7 ">
+            <p>Contact</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- end of desktop menu  -->
+
+    <!-- Mobile Sidebar Toggle -->
+    <div class="mobilebar h-10">
+      <div class="d-flex justify-content-between w-90">
+
+        <div class="mobilebarpic mt-2">
+          <img src="./techlogo.svg" class="w-75" alt="">
+        </div>
+        <!-- hambuger  -->
+        <div class="mt-3">
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <!-- crosssign  -->
+        <div class="crossmark hideit mt-3" id="closeSidebar"></div>
+
+
+
+      </div>
+
+    </div>
+    </div>
+
+    <!-- MOBILE SIDEBAR -->
+
+    <div id="mobileSidebar" class="mobile-sidebar">
+
+      <!-- Sidebar Header -->
+      <div class="sidebar-top d-flex justify-content-evenly align-items-center p-1"></div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu list-unstyled p-0 m-0">
+
+        <li>
+          <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
+            Company
+            <svg class="dropdown-icon" viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+              </path>
+            </svg>
+          </div>
+
+          <ul class="sidebar-submenu list-unstyled ps-4 d-none">
+            <li class="d-flex align-items-center gap-2"><img class="smallicon" src="./icon/about-menu-icon.webp"> <span
+                class="fontsm">About Us</span></li>
+            <li class="d-flex align-items-center gap-2"><img class="smallicon" src="./icon/news-menu-icon.webp"> <span
+                class="fontsm">Press Releases</span></li>
+            <li class="d-flex align-items-center gap-2"><img class="smallicon" src="./icon/career-menu-icon.webp"> <span
+                class="fontsm">Careers</span></li>
+            <li class="d-flex align-items-center gap-2"><img class="smallicon" src="./icon/best-menu-icon.webp"> <span
+                class="fontsm">Best Place Work</span></li>
+            <li class="d-flex align-items-center gap-2"><img class="smallicon" src="./icon/award-menu-icon.webp"> <span
+                class="fontsm">Award Recognition</span></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
+            Our Services
+            <svg class="dropdown-icon" viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+              </path>
+            </svg>
+          </div>
+
+          <ul class="sidebar-submenu list-unstyled ps-4 d-none">
+            <li class="fontsm">SEO Services</li>
+            <li class="fontsm">AI SEO</li>
+            <li class="fontsm">LLM Optimization</li>
+            <li class="fontsm">Enterprise SEO</li>
+            <li class="fontsm">Ecommerce SEO</li>
+            <li class="fontsm">Technical SEO</li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
+            Our Work
+            <svg class="dropdown-icon" viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+              </path>
+            </svg>
+          </div>
+
+          <ul class="sidebar-submenu list-unstyled ps-4 d-none">
+            <li><img class="smallicon" src="./submenulogo/Portfolio.svg"> <span class="fontsm">Portfolio</span></li>
+            <li><img class="smallicon" src="./submenulogo/testi-menu-icon.webp"> <span
+                class="fontsm">Testimonials</span></li>
+            <li><img class="smallicon" src="./submenulogo/case-menu-icon.webp"> <span class="fontsm">Case Studies</span>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
+            Industry
+            <svg class="dropdown-icon" viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+              </path>
+            </svg>
+          </div>
+
+          <ul class="sidebar-submenu list-unstyled ps-4 d-none">
+            <li><img class="smallicon" src="./submenulogo/bfsi.svg"> <span class="fontsm">BFSI</span></li>
+            <li><img class="smallicon" src="./submenulogo/b2b-menu-icon.webp"> <span class="fontsm">B2B</span></li>
+            <li><img class="smallicon" src="./submenulogo/Education.webp"> <span class="fontsm">Education</span></li>
+            <li><img class="smallicon" src="./submenulogo/Healthcare.webp"> <span class="fontsm">HealthCare</span></li>
+            <li><img class="smallicon" src="./submenulogo/cart.svg"> <span class="fontsm">E-Commerce</span></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
+            Insights
+            <svg class="dropdown-icon" viewBox="0 0 512 512">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+              </path>
+            </svg>
+          </div>
+
+          <ul class="sidebar-submenu list-unstyled ps-4 d-none">
+            <li><img class="smallicon" src="./submenulogo/digi-menu-icon.webp"> <span class="fontsm">Digital Report
+                Card</span></li>
+            <li><img class="smallicon" src="./submenulogo/search-menu-icon.webp"> <span class="fontsm">Search Trends
+                Reports</span></li>
+          </ul>
+        </li>
+
+        <li class="border-bottom px-3 py-2 itemsh fontsm">Blog</li>
+        <li class="border-bottom px-3 py-2 fontsm">Contact</li>
+      </ul>
+    </div>
+
+
+    <!-- end of header  -->
+
+    <main class="w-100">
+
+      <!-- hero section  -->
+      <!-- clientsection css  -->
+
+      <!-- HERO SECTION -->
+      <div class="herosection container-fluid row w100 align-items-center py-4 px-md-5">
+
+        <!-- Left Info -->
+        <div
+          class="info col-12 col-md-7 d-flex flex-column justify-content-center text-center text-md-start mb-4 mb-md-0">
+          <p class="heropara">We make sure you get found.</p>
+          <h1 class="text-white fw-bold">Drive Traffic, Leads & Revenue with Expert Digital Marketing Services</h1>
+          <p class="text-white d-none d-md-block">
+            To succeed in business, you first need to succeed in search results.
+            Our digital marketing services connect you with your customers’ journey from end to end - from discovery to
+            retention.
+            Join hundreds of marquee brands who have experienced transformational growth with Techmagnate.
+          </p>
+
+          <div
+            class="button-group d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start mt-3 d-none d-md-flex">
+            <button class="orange-btn p-2 move rounded-5 text-white border-0 orangelight">
+              Speak to an SEO Expert <span class="arrbtn">&rightarrow;</span>
             </button>
+
+
+            <button class="transparent-btn arrow-move text-white p-2 rounded-5 border border-white bg-transparent">
+              Our Service <span>&rightarrow;</span>
+            </button>
+          </div>
         </div>
 
-    </div>
-</div>
+        <!-- Right Image -->
+        <div class="heroimage col-12 col-md-5 text-center">
+          <img src="./herosectionimg/Home.webp" alt="Hero Image" class="img-fluid rounded-3">
+          <div class="d-md-none d-block">
+            <button class="orange-btn p-2 move rounded-5 text-white border-0 orangelight">Speak to an Expert
+              <span>&rightarrow;</span></button>
+            <button
+              class="mt-3 transparent-btn arrow-move text-white p-2 rounded-5 border border-white bg-transparent">Our
+              Service <span>&rightarrow;</span></button>
+          </div>
+        </div>
 
-<!-- end of contacthead  -->
-
-<!-- header section  -->
+      </div>
 
 
-<!-- Header -->
+      <!-- SERVICE MENU -->
+      <div class="servicemenu container-fluid d-flex justify-content-center my-3 px-2 d-none d-lg-flex">
+        <div class="text d-flex flex-wrap gap-3 justify-content-center align-items-center p-3 rounded-5"
+          style="width: 80%; background-color: #D7E5FF;">
+          <p class="blue m-0">SEO Services</p>
+          <p class="blue m-0">Digital Marketing Services</p>
+          <p class="blue m-0">Mobile App Marketing</p>
+          <p class="blue m-0">Content Writing</p>
+          <p class="blue m-0">PPC Services</p>
+          <p class="blue m-0">Martech Consulting</p>
+        </div>
+      </div>
 
-  <!-- Desktop Menu -->
 
 
+      <!-- CLIENT SECTION -->
+      <div class="clientsection py-5 container" style="max-width: 90%;">
+        <p class="text-center lightblue fw-semibold mb-2">CLIENTS</p>
+        <h1 class="text-center clientheader mb-5">
+          Working with the Largest Enterprises <br> To Achieve Business Goals
+        </h1>
 
-  <div class="desktop-navbar d-none d-md-flex align-items-center justify-content-between px-3 py-2">
-  
-  <!-- Logo -->
-  <div class="techlogo d-flex align-items-center">
-    <img src="./techlogo.svg" alt="Techmagnet Logo" class="logo-img">
-  </div>
-
-  <!-- Menu -->
-  <div class="menu d-flex align-items-center me-5">
-    <div class="sub-menu d-flex gap-4 align-items-center">
-
-      <!-- Company Dropdown -->
-      <div class="submenu-item position-relative ">
-        <p class="submenu-toggle ">Company <span class="down-arrow">&#x3E;</span></p>
-        <div class="dropdown-menu-custom borderlight">
-          <div class="row">
-            <div class="col-md-5 d-flex flex-column ">
-              <div class="d-flex"> <div class=""><img  src="./icon/about-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">About Us</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./icon/news-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">Press Release</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./icon/career-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">Careers</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./icon/best-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">Best Place Work</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./icon/award-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">Award Recognition</p> </div>
+        <!-- Desktop & Large Screen Grid -->
+        <div class="logo d-none d-md-block text-center">
+          <div class="row border-0 gy-3 justify-content-center">
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/axis.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/bajajlogo.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/blk.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/globan indian.webp" class="img-fluid" alt="">
             </div>
-            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center ">
-              <div class="text-center">
-                <p class="text-blue fw-semibold">Get the most Valuable Search <br> Insight for Your Industry </p>
-                <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
-              </div>
-              <img class="mt-2" src="./headeradsimg/str-menu.webp" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Our Services -->
-           <div class="submenu-item position-relative">
-        <p class="submenu-toggle">Our Service<span class="down-arrow">&#x3E;</span></p>
-        <div class="dropdown-menu-custom borderlight">
-          <div class="row">
-            <div class="col-md-5 d-flex flex-column ">
-              <div>
-<strong class="ms-3">Search Engine Optimization</strong>
-<p class="arr ms-3"> 
-SEO Services
-</p>
-<p class="arr ms-3">
-Enterprise SEO
-</p>
-<p class="arr ms-3">
-SEO Migration Services
-</p>
-<p class="arr ms-3">
-Vernacular SEO Services
-</p>
-<p class="arr ms-3">
-SEO Audit
-</p>
-<p class="arr ms-3">
-Google Penalty
-</p>
-              </div>
-            </div>
-            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center ">
-              <div class="text-center">
-                <p class="text-blue fw-semibold">3X Organic Growth Delivered – Explore Our Digital Report Card for FY25</p>
-                <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
-              </div>
-              <img class="mt-2" src="./submenulogo/Mega-Menu-Service.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-      <!-- Our Work Dropdown -->
-     <div class="submenu-item position-relative">
-        <p class="submenu-toggle">Our Work<span class="down-arrow">&#x3E;</span></p>
-        <div class="dropdown-menu-custom borderlight">
-          <div class="row">
-            <div class="col-md-5 d-flex flex-column ">
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/Portfolio.svg" class="imgicon" alt=""></div>  <p class="ms-3">Portfolio</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/testi-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">Testimonials</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/case-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">Case Studies</p> </div>
-         
-            </div>
-            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center ">
-              <div class="text-center">
-                <p class="text-blue fw-semibold">3X Organic Growth Delivered -<br> Explore Our Digital Report Card <br>for FY25 </p>
-                <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
-              </div>
-              <img class="mt-2" src="./submenulogo/drc-menu.webp" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Industry -->
-   <div class="submenu-item position-relative">
-        <p class="submenu-toggle">Industry<span class="down-arrow">&#x3E;</span></p>
-        <div class="dropdown-menu-custom borderlight">
-          <div class="row">
-            <div class="col-md-5 d-flex flex-column ">
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/bfsi.svg" class="imgicon" alt=""></div>  <p class="ms-3">BFSI</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/b2b-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3">B2B</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/Education.webp" class="imgicon" alt=""></div>  <p class="ms-3">Education</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/Healthcare.webp" class="imgicon" alt=""></div>  <p class="ms-3">HealthCare</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/cart.svg" class="imgicon" alt=""></div>  <p class="ms-3">E-Commerce</p> </div>
-         
-            </div>
-            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center ">
-              <div class="text-center">
-                <p class="text-blue fw-semibold">3X Organic Growth Delivered -<br> Explore Our Digital Report Card <br>for FY25 </p>
-                <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
-              </div>
-              <img class="mt-2" src="./headeradsimg/str-menu.webp" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Insights -->
-    <div class="submenu-item position-relative subs">
-        <p class="submenu-toggle">Insights<span class="down-arrow">&#x3E;</span></p>
-        <div class=" dropdowncustom2 borderlight">
-          <div class="row mt-2">
-            <div class="col-md-5 d-flex flex-column ">
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/digi-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3 mt-2">Digital Report Card</p> </div>
-              <div class="d-flex"> <div class=""><img  src="./submenulogo/search-menu-icon.webp" class="imgicon" alt=""></div>  <p class="ms-3 mt-2">Search Trends Reports</p> </div>
-        
-         
-            </div>
-            <div class="col-md-7 d-flex flex-column justify-content-center align-items-center ">
-              <div class="text-center">
-                <p class="text-blue fw-semibold">3X Organic Growth Delivered -<br> Explore Our Digital Report Card <br>for FY25 </p>
-                <button class="adsbtn rounded-5 text-white">Download Report &rightarrow;</button>
-              </div>
-              <img class="mt-2" src="./submenulogo/drc-menu.webp" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Blog & Contact -->
-      <div class="submenu-item6 itemsh"><p>Blog</p></div>
-      <div class="submenu-item7 itemsh"><p>Contact</p></div>
-
-    </div>
-  </div>
-
-</div>
-
-  
-
-  <!-- end of desktop menu  -->
-
-  <!-- Mobile Sidebar Toggle -->
-  <div class="d-md-none mobilebar d-flex justify-content-between">
-  <div class="mobilebarpic">
-    <img src="./techlogo.svg" class="w-75" alt="">
-  </div>
-    <button class="btn  me-4" id="mobileMenuBtn">&#9776;</button>
-  </div>
-</div>
-
-<!-- MOBILE SIDEBAR -->
-<div id="mobileSidebar" class="mobile-sidebar d-md-none">
-  <!-- Sidebar Header -->
-  <div class="sidebar-top d-flex justify-content-between align-items-center p-3 border-bottom">
-    <img src="./techlogo.svg" alt="Techmagnate Logo" class="w-30">
-    <button id="closeSidebar" class="btn fs-3">&times;</button>
-  </div>
-
-  <!-- Sidebar Menu -->
-  <ul class="sidebar-menu list-unstyled p-0 m-0">
-    <li>
-      <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
-        Company
-        <span class="dropdown-icon">&#x25BC;</span>
-      </div>
-      <ul class="sidebar-submenu list-unstyled ps-4 d-none">
-       <div  class="  d-flex"> <img class="smallicon" src="./icon/about-menu-icon.webp" alt=""> <p class="fontsm ">About Us</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./icon/news-menu-icon.webp" alt=""> <p class="fontsm ">Press Releases</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./icon/career-menu-icon.webp" alt=""> <p class="fontsm ">Careers</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./icon/best-menu-icon.webp" alt=""> <p class="fontsm ">Best Place Work</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./icon/award-menu-icon.webp" alt=""> <p class="fontsm ">Award Recognition</p></div> 
-        
-      </ul>
-    </li>
-
-    <li>
-      <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
-        Our Services
-        <span class="dropdown-icon">&#x25BC;</span>
-      </div>
-      <ul class="sidebar-submenu list-unstyled ps-4 d-none">
-        <div  class="  d-flex">  <p class="fontsm ">SEO Services</p></div> 
-        <div  class="  d-flex">  <p class="fontsm ">AI SEO</p></div> 
-        <div  class="  d-flex">  <p class="fontsm ">LLM Optimization</p></div> 
-        <div  class="  d-flex">  <p class="fontsm ">Enterprise SEO</p></div> 
-        <div  class="  d-flex">  <p class="fontsm ">Ecommerce SEO</p></div> 
-        <div  class="  d-flex">  <p class="fontsm ">Technical SEO</p></div> 
-      
-        
-      </ul>
-    </li>
-
-    <li>
-      <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
-        Our Work
-        <span class="dropdown-icon">&#x25BC;</span>
-      </div>
-      <ul class="sidebar-submenu list-unstyled ps-4 d-none">
-         <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/Portfolio.svg" alt=""> <p class="fontsm ">Portfolio</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/testi-menu-icon.webp" alt=""> <p class="fontsm ">Testimonials</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/case-menu-icon.webp" alt=""> <p class="fontsm ">Case Studies</p></div> 
-       
-        
-      </ul>
-    </li>
-
-    <li>
-      <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
-        Industry
-        <span class="dropdown-icon">&#x25BC;</span>
-      </div>
-      <ul class="sidebar-submenu list-unstyled ps-4 d-none">
-         <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/bfsi.svg" alt=""> <p class="fontsm ">BFSI</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/b2b-menu-icon.webp" alt=""> <p class="fontsm ">B2B</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/Education.webp" alt=""> <p class="fontsm ">Education</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/Healthcare.webp" alt=""> <p class="fontsm ">HealthCare</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/cart.svg" alt=""> <p class="fontsm ">E-Commerce</p></div> 
-        
-      </ul>
-    </li>
-
-    <li>
-      <div class="sidebar-item px-3 py-2 border-bottom d-flex justify-content-between align-items-center fontsm">
-        Insights
-        <span class="dropdown-icon">&#x25BC;</span>
-      </div>
-      <ul class="sidebar-submenu list-unstyled ps-4 d-none">
-         <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/digi-menu-icon.webp" alt=""> <p class="fontsm ">Digital Report Card</p></div> 
-       <div  class="  d-flex"> <img class="smallicon" src="./submenulogo/search-menu-icon.webp" alt=""> <p class="fontsm ">Search Trends Reports</p></div> 
-       
-        
-      </ul>
-    </li>
-
-    <li class="border-bottom px-3 py-2 itemsh fontsm">Blog</li>
-    <li class="border-bottom px-3 py-2 fontsm">Contact</li>
-  </ul>
-
-  <!-- Bottom Buttons -->
-  <div class="sidebar-footer p-3 border-top mt-auto">
-    <div class="d-flex flex-column gap-2">
-      <a href="https://wa.me/919910308266" target="_blank" class="btn btn-success w-100 d-flex align-items-center justify-content-center gap-2">
-        <img src="./icon/whatsappicon.png" alt="" width="20"> WhatsApp
-      </a>
-      <a href="mailto:enquiry@techmagnate.com" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2">
-        <img src="./icon/emailicon.png" alt="" width="20"> Email Us
-      </a>
-      <a href="tel:+919910308266" class="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2">
-        <img src="./icon/callicon.png" alt="" width="20"> Call Us
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- end of header  -->
-
-<main class="w-100">
-
-    <!-- hero section  -->
-<!-- clientsection css  -->
-
-<!-- HERO SECTION -->
-<div class="herosection container-fluid row w-100 align-items-center py-4 px-md-5">
-
-  <!-- Left Info -->
-  <div class="info col-12 col-md-7 d-flex flex-column justify-content-center text-center text-md-start mb-4 mb-md-0">
-    <p class="limegreen">We make sure you get found.</p>
-    <h1 class="text-white fw-bold">Drive Traffic, Leads & Revenue with Expert Digital Marketing Services</h1>
-    <p class="text-white">
-      To succeed in business, you first need to succeed in search results.
-      Our digital marketing services connect you with your customers’ journey from end to end - from discovery to retention.
-      Join hundreds of marquee brands who have experienced transformational growth with Techmagnate.
-    </p>
-
-    <div class="button-group d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start mt-3">
-      <button class="orange-btn p-2 move rounded-5 text-white border-0 orangelight">
-  Speak to an SEO Expert <span class="arrbtn">&rightarrow;</span>
-</button>
-
-
-      <button class="transparent-btn arrow-move text-white p-2 rounded-5 border border-white bg-transparent">
-        Our Service <span>&rightarrow;</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Right Image -->
-  <div class="heroimage col-12 col-md-5 text-center">
-    <img src="./herosectionimg/Home.webp" alt="Hero Image" class="img-fluid rounded-3">
-  </div>
-
-</div>
-
-
-<!-- SERVICE MENU -->
-<div class="servicemenu container-fluid d-flex justify-content-center my-3 px-2 d-none d-lg-flex">
-  <div class="text d-flex flex-wrap gap-3 justify-content-center align-items-center p-3 rounded-5" style="width: 90%; background-color: #D7E5FF;">
-    <p class="blue m-0">SEO Services</p>
-    <p class="blue m-0">Digital Marketing Services</p>
-    <p class="blue m-0">Mobile App Marketing</p>
-    <p class="blue m-0">Content Writing</p>
-    <p class="blue m-0">PPC Services</p>
-    <p class="blue m-0">Martech Consulting</p>
-  </div>
-</div>
-
-
-
-<!-- CLIENT SECTION -->
-<div class="clientsection py-5 container" style="max-width: 90%;">
-  <p class="text-center lightblue fw-semibold mb-2">CLIENTS</p>
-  <h1 class="text-center clientheader mb-5">
-    Working with the Largest Enterprises <br> To Achieve Business Goals
-  </h1>
-
-  <!-- Desktop & Large Screen Grid -->
-  <div class="logo d-none d-lg-block text-center">
-    <div class="row gy-3 justify-content-center">
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/axis.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/bajajlogo.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/blk.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/globan indian.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/hero.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/hyundai.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/iifl.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/Indira.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/landt.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/onecar.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/pigeon.webp" class="img-fluid" alt=""></div>
-      <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/simpolo.webp" class="img-fluid" alt=""></div>
-    </div>
-  </div>
-
-  <!-- Medium Screen Swiper (6 logos per slide, 2 rows of 3) -->
-  <div class="logo-slider d-lg-none">
-    <div class="swiper myClientSwiper">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide d-flex flex-wrap justify-content-center">
-          <div class="col-4 mb-2"><img src="./brandlogo/axis.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/bajajlogo.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/blk.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/globan indian.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/hero.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/hyundai.webp" class="img-fluid" alt=""></div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="swiper-slide d-flex flex-wrap justify-content-center">
-          <div class="col-4 mb-2"><img src="./brandlogo/iifl.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/Indira.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/landt.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/onecar.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/pigeon.webp" class="img-fluid" alt=""></div>
-          <div class="col-4 mb-2"><img src="./brandlogo/simpolo.webp" class="img-fluid" alt=""></div>
-        </div>
-      </div>
-      <!-- Pagination -->
-      <div class="swiper-pagination flat-pagination mt-2"></div>
-    </div>
-  </div>
-</div>
-
-   
-<!-- end of clientsection  -->
-
-<!-- infosection  -->
-
-<div class="info d-flex justify-content-center flex-column align-items-center rounded-4 infosection  w-90 mx-auto p-3">
-  <h1 class="infohead text-center mb-3">Data Backed Services to Grow Your Revenue</h1>
-  <p class="w-85 text-center infotext mb-4">
-    To experience 360-degree growth for your business, you need a 360-degree approach. <br>
-    Do you want to rank higher on search engines, optimize ad campaigns, or enhance visibility? Leveraging the right data and marketing channels is key to sustained <br>
-    business growth. Techmagnate can help. Our core expertise lies in SEO—from Enterprise SEO to Hyperlocal SEO, Martech, and search marketing—powering comprehensive digital <br>
-    growth. Since 2006, we have driven transformational growth for our clients. Our vision is to empower 300+ clients by 2030. <br>
-    Partner with the best in digital marketing. Let’s drive measurable growth together.
-  </p>
-
-  <!-- Slider Tabs -->
-  <div class="slider d-flex flex-wrap gap-3  justify-content-center mb-4">
-    <p class="px-3 py-1 rounded-4 service-tab hovergreen active" data-target="seo">Search Engine Optimization</p>
-    <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="paidmarketing">Paid Marketing</p>
-    <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="contentmarketing">Content Marketing</p>
-    <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="mobileapp">Mobile App Marketing</p>
-    <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="techandautomation">Marketing Technology & Automation</p>
-  </div>
-
-  <!-- Content -->
-  <div class="service-content w-100">
-
-    <div id="seo" class="service-tab-content row">
-      <div class="col-md-6 ">
-        <div class="d-flex flex-column justify-content-center ">
-
-          <h3 class="ms-5">Search Engine Optimization</h3>
-          <p class="ms-5">Greater visibility. Higher rankings. Higher traffic.Better quality leads</p>
-          <div class="ms-5"><button class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover SEO Services  <span>&rarr;</span> </button></div>
-        </div>
-
-      </div>
-      <div class="col-md-6">
-
-        <div class="flex  d-flex align-items-center">
-
-          <div class="img ">
-            <img src="./infoimg/SEO-Services.webp" alt="">
-          </div>
-
-          <div class="  d-flex flex-column align-content-center ms-3 ">
-            <p class="fw-bold cursor-pointer">AI SEO</p>
-            <p class="fw-bold cursor-pointer">Enterprise SEO</p>
-            <p class="fw-bold cursor-pointer">Ecommerce SEO</p>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/hero.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/hyundai.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/iifl.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/Indira.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/landt.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/onecar.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/pigeon.webp" class="img-fluid" alt=""></div>
+            <div class="col-4 col-sm-3 col-md-2"><img src="./brandlogo/simpolo.webp" class="img-fluid" alt=""></div>
           </div>
         </div>
 
-      </div>
-    </div>
+        <!-- Medium Screen Swiper (6 logos per slide, 2 rows of 3) -->
 
-    <div id="paidmarketing" class="service-tab-content row d-none">
-      <div class="col-md-6">
-
- <div class="d-flex flex-column justify-content-center ">
-
-          <h3 class="ms-5">Paid Marketing</h3>
-          <p class="ms-5">Well-crafted paid marketing campaigns. Targeted impact. Higher Return on Ad <br> Spend(ROAS).</p>
-          <div class="ms-5"><button class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover Paid Maketing Services  <span>&rarr;</span> </button></div>
-        </div>
-
-      </div>
-      <div class="col-md-6">
-          <div class="flex  d-flex align-items-center">
-
-          <div class="img ">
-            <img src="./infoimg/PPC-Services-Company.webp" alt="">
-          </div>
-
-          <div class=" d-flex flex-column align-content-center ms-3 ">
-            <p class="fw-bold cursor-pointer">PPC Services</p>
-            <p class="fw-bold cursor-pointer">PPC Reseller</p>
-            <p class="fw-bold cursor-pointer">Mobile Advertising</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div id="contentmarketing" class="service-tab-content row d-none">
-      <div class="col-md-6">
-       
- <div class="d-flex flex-column justify-content-center ">
-
-          <h3 class="ms-5">Content Marketing</h3>
-          <p class="ms-5">Develop strong and helpful content assests. Reach the right audience.Establish <br> industry expertise</p>
-          <div class="ms-5"><button class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover Content Maketing Services  <span>&rarr;</span> </button></div>
-        </div>
-
-
-      </div>
-      <div class="col-md-6">
-       
-
-        <div class="flex  d-flex align-items-center">
-
-          <div class="img ">
-            <img src="./infoimg/Content-Marketing-Services.webp" alt="">
-          </div>
-
-          <div class=" d-flex flex-column align-content-center ms-3 ">
-            <p class="fw-bold cursor-pointer">Content Writing Services</p>
-            <p class="fw-bold cursor-pointer">Guest Posting</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div id="mobileapp" class="service-tab-content row d-none">
-      <div class="col-md-6">
-        
-<div class="d-flex flex-column justify-content-center ">
-
-          <h3 class="ms-5">Mobile App Marketing</h3>
-          <p class="ms-5">Increase app visibility and downloads.Improve ratings and reviews</p>
-          <div class="ms-5"><button class="orangelight border-0 p-2 rounded-5 text-white  mb-4 arrow-move">Discover App Maketing Services  <span>&rarr;</span> </button></div>
-        </div>
-
-
-      </div>
-      <div class="col-md-6">
-      <div class="flex  d-flex align-items-center">
-
-          <div class="img ">
-            <img src="./infoimg/Mobile-App-Marketing-Services.webp" alt="">
-          </div>
-
-          <div class=" d-flex flex-column align-content-center ms-3 ">
-            <p class="fw-bold cursor-pointer">App Store Optimization Services</p>
-            <p class="fw-bold cursor-pointer">Mobile App Marketing Services</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="techandautomation" class="service-tab-content row d-none">
-      <div class="col-md-6">
-
-        <div class="d-flex flex-column justify-content-center ">
-
-          <h3 class="ms-5">Marketing Technology & Automation</h3>
-          <p class="ms-5">Optimise the entire customer journey -  Discover,Conversion ,Engagement ,<br> and Retention</p>
-          <div class="ms-5"><button class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover Martech Services <span>&rarr;</span>  </button></div>
-        </div>
-
-      </div>
-      <div class="col-md-6">
-        
-             <div class="flex d-flex align-items-center">
-
-          <div class="img ">
-            <img src="./infoimg/Martech1.webp" alt="">
-          </div>
-
-          <div class=" d-flex flex-column align-content-center ms-3 ">
-            <p class="fw-bold cursor-pointer">Martech Consulting Services</p>
-            <p class="fw-bold cursor-pointer">Conversion Rate Optimization</p>
-            <p class="fw-bold cursor-pointer">Customer Data Platform Services</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- end of infosection  -->
-
-<!-- start of advertisement section  -->
-<div class="videosection">
-<h1 class="text-center videotitle">Watch Our Video</h1>
-
-<div class="homevideo w-100 d-flex justify-content-center">
-<video class="vid " muted autoplay loop src="./video/advideo.mp4"></video>
-</div>
-
-<div class="d-flex  justify-content-center flex-column align-items-center">
-    <p  class="text-center gray">Techmagnate is India’s premier digital marketing and SEO powerhouse. With over 18 years of proven success, our vision is to fuel <br> transformational growth for 300+ clients by 2030. Ready to unlock your brand’s complete digital potential?</p>
-    <button class="px-2 p-2 rounded-5 text-white vidbtn arrow-move">  Speak to an Expert  <span> &rarr;</span></button>
-</div>
-</div>
-<!-- end of adsvideo  -->
-
-<!-- services  -->
-
-<div class="container-fluid servicesection py-5">
-  <div class="row align-items-start justify-content-center">
-
-    <!-- LEFT COLUMN -->
-    <div class="col-md-5 mb-4 mb-md-0 d-flex flex-column align-items-center">
-      <h1 class="servicetitle text-center text-md-start">
-        Achieve a 2x Increase in <br> Avg. Monthly Traffic
-      </h1>
-
-      <div class="row mt-4 g-3 text-center text-md-start">
-        <div class="col-12 col-sm-6 d-flex align-items-center mb-2">
-          <img src="./logo/trafic_iconnew.webp" alt="" class="service-icon me-2">
-          <div>
-            <span class="servicelistext">Get</span>
-            <p class="mb-0">SERP Visibility</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 d-flex align-items-center mb-2">
-          <img src="./logo/2.webp" alt="" class="service-icon me-2">
-          <div>
-            <span class="servicelistext">Drive</span>
-            <p class="mb-0">Qualified Leads</p>
-          </div>
-        </div>
-
-        <div class="col-12 d-flex align-items-center mb-2">
-          <img src="./logo/trafic_iconnew2.webp" alt="" class="service-icon me-2">
-          <div>
-            <span class="servicelistext">Grow</span>
-            <p class="mb-0">Your Bottomline</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="col-md-7 serviceright d-flex flex-column align-items-center">
-
-      <!-- Cards container -->
-      <div class="sliderservice d-flex flex-wrap justify-content-center gap-4">
-
-        <!-- Card 1 -->
-        <div class="servicesliderliste text-center d-flex flex-column">
-          <div class="servicelogo mb-3">
-            <img src="servicelogo/Dedicated-Professionals.webp" alt="" class="card-icon">
-          </div>
-          <strong>Dedicated Teams for AI, Automation, and Data Analytics</strong>
-          <p class="mt-2">
-            Our specialized teams use AI, automation, and analytics to augment campaign
-            performance, improve customer engagement, and unlock new growth opportunities.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="servicesliderliste text-center d-flex flex-column">
-          <div class="servicelogo mb-3">
-            <img src="servicelogo/In-House-Martech-Capabilities.webp" alt="" class="card-icon">
-          </div>
-          <strong>In-House Martech Capabilities</strong>
-          <p class="mt-2">
-            Our in-house expertise in CRM, AI, analytics, and marketing automation empowers
-            businesses with data-driven, personalized marketing solutions that drive efficiency and ROI.
-          </p>
-        </div>
-
-      </div>
-
-      <!-- Button below cards -->
-      <button class="p-2 mt-4 orangelight border-0 rounded-5 text-white speak-btn">
-        Speak to an Expert <span class="arrow">→</span>
-      </button>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- end of service  -->
-
-
-
- <!-- award section  -->
-    <h1 class="text-center awardtitle mt-4 font-bold">Awards & Accolades for Techmagnate</h1>
-<p class="text-center gray mb-4">
-  Don’t believe us? Even the Industry thinks we’re the best SEO service in India.
-  Over the years we have consistently won awards for  our SEO and Content Marketing
-  at various industry events! <br> See our full list of awards and accolades here:
-</p>
-
-<!-- Swiper -->
-<div class="awards-container">
-  <div class="swiper awardsSwiper">
-    <div class="swiper-wrapper">
-
-      <!-- Card 1 -->
-      <div class="swiper-slide award-card d-flex align-items-center gap-3">
-        <div class="icon-wrapper">
-          <img src="./award/1.png" alt="">
-        </div>
-        <div>
-          <strong>Inkspell Unlocked 2025</strong>
-          <p>Best SEO Campaign : Bajaj <br> Finserv Mutual Funds</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="swiper-slide award-card d-flex align-items-center gap-3">
-        <div class="icon-wrapper">
-          <img src="./award/2.png" alt="">
-        </div>
-        <div>
-          <strong>Pitch Finovate BFSI Marketing Awards 2025</strong>
-          <p>SEO Driven Programmatic <br> Marketing category-Gold</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="swiper-slide award-card d-flex align-items-center gap-3">
-        <div class="icon-wrapper">
-          <img src="./award/3.webp" alt="">
-        </div>
-        <div>
-          <strong>MCube Award</strong>
-          <p>For Best Digital Marketing <br> Campaign For Educational <br> Institution</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  <!-- Pagination -->
-  <div class="swiper-pagination mt-3"></div>
-</div>
-
- <!-- end of award section  -->
-
-<div class="mt-4 mb-5">
-    <p class="text-center gray">Not just SEO Services in India. Techmagnate should be your top choice of Digital Marketing Agency if you’re looking for growth in 2025.</p>
-    <div class="d-flex justify-content-center">
-        <button class="p-2 rounded-5 border-0 px-3 text-white arrow-move orangelight">View All <span>&rarr;</span> </button>
-    </div>
-</div>
-
-
-<!-- report card  -->
-
- <div class="w-75 mx-auto reportcard">
-<div class="border rounded-4 position-relative  row ">
-
-    <div class="reportcardtext rounded-4 w-100 col-md-8 d-flex flex-column align-items-start justify-content-center">
-<p class="lightblue">Digital Report Card</p>
-<h1 class="reporttitle">
-    In 2025, We Delivered an Average Growth of 3X in Traffic and 113.38% in Leads for Our Clients.
-</h1>
-<button class="p-2 move-arrow rounded-5 text-white reportbtn border-0 arrow-move">
-    Download Report <span> &rarr;</span>
-</button>
-
-</div>
-
-<div class=" reportimg col-md-4">
-  <div class="d-flex justify-content-center align-items-center">
-
-    <img class="w-100" src="./report card/digital-report-card_img.webp" alt="">
-  </div>
-</div>
-
-</div>
-
-
- </div>
-<!-- end of report card  -->
-
-<div class="swiper mySwiper statsswiper mt-3">
-  <div class="w-75 mx-auto  ">
-
-    <h1 class="text-center fw-bold">Driving Actual Business Growth for Our Clients</h1>
-    <p class="text-center">Read our case studies to see how we’ve created true value and delivered transformational growth for our clients</p>
-  </div>
-  <div class="swiper-wrapper">
-
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <div class="row align-items-center">
-        <!-- Content Column -->
-        <div class="col-md-7    p-3  ">
-          <div class="statlogo mb-2 ms-5 ">
-            <img src="./statspicture/bajaj-finserv-logo.webp" alt="" class="img-fluid" style="max-width: 80px;">
-          </div>
-          <h2 class="semititle ms-5">Bajaj Finserv Gold Loans SEO Case Study <br> 400 Cr.+ disbursals of gold loans</h2>
-          <p class="para ms-5">When Bajaj Finserv approached Techmagnate for their Gold Loans <br>LoB, the NBFC was making an entry into a market saturated with <br> established brands and heavy hitters. Their objective was to increase <br> the overall volume of organic traffic and leads for their new offering.</p>
-          <div class="mt-2 ms-5">
-            <button class="p-2 border border-0 orangelight  rounded-5 text-white me-2 move-arrow">View Case Study <span> &rarr;</span> </button>
-            <button class="p-2  border border-black text-black rounded-5 bg-transparent move-arrow">View Our Work  <span>&rarr;</span> </button>
-          </div>
-        </div>
-
-        <!-- Image Column -->
-        <div class="col-md-5  p-3 d-flex justify-content-center">
-          <img src="./statspicture/Bajaj-Finserv.webp" alt="" class="img-fluid" style="max-height: 550px;">
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <div class="row align-items-center">
-        <div class="col-md-7 p-3">
-        
- <div class="statlogo mb-2 ms-5 ">
-            <img src="./statspicture/image-1521.webp" alt="" class="img-fluid" style="max-width: 80px;">
-          </div>
-          <h2 class="semititle ms-5">Bajaj Finserv Gold Loans SEO Case Study <br> 400 Cr.+ disbursals of gold loans</h2>
-          <p class="para ms-5">When Bajaj Finserv approached Techmagnate for their Gold Loans <br>LoB, the NBFC was making an entry into a market saturated with <br> established brands and heavy hitters. Their objective was to increase <br> the overall volume of organic traffic and leads for their new offering.</p>
-          <div class="mt-2 ms-5">
-            <button class="p-2 border border-0 orangelight  rounded-5 text-white me-2">View Case Study <span>&rarr;</span> </button>
-            <button class="p-2  border border-black text-black rounded-5 bg-transparent">View Our Work <span>&rarr;</span></button>
-          </div>
-
-        </div>
-        <div class="col-md-5 p-3 d-flex justify-content-center">
-          <img src="./statspicture/Bajaj-Finserv.webp" alt="" class="img-fluid" style="max-height: 550px;">
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <div class="row align-items-center">
-        <div class="col-md-7 p-3">
-          <div class="statlogo mb-2 ms-5 ">
-            <img src="./statspicture/image-1520.webp" alt="" class="img-fluid" style="max-width: 80px;">
-          </div>
-          <h2 class="semititle ms-5">Bajaj Finserv Gold Loans SEO Case Study <br> 400 Cr.+ disbursals of gold loans</h2>
-          <p class="para ms-5">When Bajaj Finserv approached Techmagnate for their Gold Loans <br>LoB, the NBFC was making an entry into a market saturated with <br> established brands and heavy hitters. Their objective was to increase <br> the overall volume of organic traffic and leads for their new offering.</p>
-          <div class="mt-2 ms-5">
-            <button class="p-2 border border-0 orangelight  rounded-5 text-white me-2 move-arrow">View Case Study <span>&rarr;</span> </button>
-            <button class="p-2  border border-black text-black rounded-5 move-arrow bg-transparent">View Our Work <span>&rarr;</span></button>
-          </div>
-        </div>
-        <div class="col-md-5 p-3 d-flex justify-content-center">
-          <img src="./statspicture/Bajaj-Finserv.webp" alt="" class="img-fluid" style="max-height: 550px;">
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Pagination -->
-  <div class="swiper-pagination mt-3"></div>
-</div>
-
-
-<!-- end of stats  -->
-
-<!-- client testimonial  -->
-
- <!-- ✅ Testimonial Section -->
-    <div class="clienttestimonial d-flex justify-content-center mt-4 ">
-      <!-- Left Side -->
-      <div class="left  testileft rounded-4 mb-3">
-        <h3 class="font-big text-white fw-bold mt-2 ms-2">
-          Client Testimonials
-        </h3>
-
-        <!-- ✅ Testimonial Slider -->
-        <div class="testimonial-slider swiper">
+        <div class="d-md-none swiper logoswiper d-block border border-black">
           <div class="swiper-wrapper">
+            <div class="swiper-slide  w-100">
+              <div class="row brandlogo">
+
+                <div class="col-4"><img src="./brandlogo/axis.webp" alt=""></div>
+                <div class="col-4"> <img src="./brandlogo/bajajlogo.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/globan indian.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/blk.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/hero.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/hyundai.webp" alt=""></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row brandlogo">
+
+                <div class="col-4"><img src="./brandlogo/iifl.webp" alt=""></div>
+                <div class="col-4"> <img src="./brandlogo/Indira.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/landt.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/onecar.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/pigeon.webp" alt=""></div>
+                <div class="col-4"><img src="./brandlogo/simpolo.webp" alt=""></div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Optional Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- end of clientsection  -->
+
+        <!-- infosection  -->
+
+        <div
+          class="info d-flex w-md-50 justify-content-center flex-column align-items-center rounded-4 infosection   mx-auto p-3">
+          <h1 class="infohead text-center mb-3">Data Backed Services to Grow Your Revenue</h1>
+          <p class="w-85 text-center infotext mb-4">
+            To experience 360-degree growth for your business, you need a 360-degree approach. <br>
+            Do you want to rank higher on search engines, optimize ad campaigns, or enhance visibility? Leveraging the
+            right data and marketing channels is key to sustained <br>
+            business growth. Techmagnate can help. Our core expertise lies in SEO—from Enterprise SEO to Hyperlocal SEO,
+            Martech, and search marketing—powering comprehensive digital <br>
+            growth. Since 2006, we have driven transformational growth for our clients. Our vision is to empower 300+
+            clients by 2030. <br>
+            Partner with the best in digital marketing. Let’s drive measurable growth together.
+          </p>
+
+
+          <div class="  d-md-flex d-none d-md-50 flex-wrap gap-3  justify-content-center mb-4">
+            <p class="px-3 py-1 rounded-4 service-tab hovergreen active" data-target="seo">Search Engine Optimization
+            </p>
+            <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="paidmarketing">Paid Marketing</p>
+            <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="contentmarketing">Content Marketing</p>
+            <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="mobileapp">Mobile App Marketing</p>
+            <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="techandautomation">Marketing Technology &
+              Automation</p>
+          </div>
+
+          <!-- small screen scroller  -->
+
+          <div class="swiper d-md-none contentSwiperTabs position-relative d-block d-md-none">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="px-3 py-1 rounded-4 service-tab hovergreen active" data-target="seo">Search Engine
+                  Optimization</p>
+              </div>
+              <div class="swiper-slide">
+                <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="paidmarketing">Paid Marketing</p>
+              </div>
+              <div class="swiper-slide">
+                <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="contentmarketing">Content Marketing
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="mobileapp">Mobile App Marketing</p>
+              </div>
+              <div class="swiper-slide">
+                <p class="px-3 py-1 rounded-4 service-tab hovergreen" data-target="techandautomation">Marketing
+                  Technology & Automation</p>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev contenttab-prev"></div>
+            <div class="swiper-button-next contenttab-next"></div>
+          </div>
+
+
+          <!-- contentslidertabend  -->
+          <!-- Content -->
+          <div class="service-content w-100 ">
+
+            <div id="seo" class="service-tab-content row">
+              <div class="col-md-6 ">
+                <div class="d-flex flex-column justify-content-center ">
+
+                  <h3 class="ms-5">Search Engine Optimization</h3>
+                  <p class="ms-5">Greater visibility. Higher rankings. Higher traffic.Better quality leads</p>
+                  <div class="ms-5"><button
+                      class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover SEO Services
+                      <span>&rarr;</span> </button></div>
+                </div>
+
+              </div>
+              <div class="col-md-6 ">
+
+                <div class="flex d-flex align-items-center">
+
+                  <div class="images ">
+                    <img class="object-fit-contain " src="./infoimg/SEO-Services.webp" alt="">
+                  </div>
+
+                  <div class="w-100  d-lg-flex d-none flex-column align-content-center ms-3 gap-4">
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">AI SEO</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Enterprise SEO</p>
+                    </div>
+                    <div class=" w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Ecommerce SEO</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="paidmarketing" class="service-tab-content row d-none">
+              <div class="col-md-6">
+
+                <div class="d-flex flex-column justify-content-center ">
+
+                  <h3 class="ms-5">Paid Marketing</h3>
+                  <p class="ms-5">Well-crafted paid marketing campaigns. Targeted impact. Higher Return on Ad <br>
+                    Spend(ROAS).</p>
+                  <div class="ms-5"><button
+                      class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover Paid Maketing
+                      Services <span>&rarr;</span> </button></div>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="flex  d-flex align-items-center">
+
+                  <div class="images border  border-black">
+                    <img src="./infoimg/PPC-Services-Company.webp" alt="">
+                  </div>
+
+                  <div class="w-100  d-flex flex-column align-content-center ms-3 gap-4">
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">PPC Services</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">PPC Reseller</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Mobile Advertising</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div id="contentmarketing" class="service-tab-content row d-none">
+              <div class="col-md-6">
+
+                <div class="d-flex flex-column justify-content-center ">
+
+                  <h3 class="ms-5">Content Marketing</h3>
+                  <p class="ms-5">Develop strong and helpful content assests. Reach the right audience.Establish <br>
+                    industry expertise</p>
+                  <div class="ms-5"><button
+                      class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover Content Maketing
+                      Services <span>&rarr;</span> </button></div>
+                </div>
+
+
+              </div>
+              <div class="col-md-6">
+
+
+                <div class="flex d-flex align-items-center">
+
+                  <div class="images border  border-black">
+                    <img src="./infoimg/Content-Marketing-Services.webp" alt="">
+                  </div>
+
+                  <div class="w-100  d-flex flex-column align-content-center ms-3 gap-4">
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Content Writing Services</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Guest Posting</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="mobileapp" class="service-tab-content row d-none">
+              <div class="col-md-6">
+
+                <div class="d-flex flex-column justify-content-center ">
+
+                  <h3 class="ms-5">Mobile App Marketing</h3>
+                  <p class="ms-5">Increase app visibility and downloads.Improve ratings and reviews</p>
+                  <div class="ms-5"><button
+                      class="orangelight border-0 p-2 rounded-5 text-white  mb-4 arrow-move">Discover App Maketing
+                      Services <span>&rarr;</span> </button></div>
+                </div>
+
+
+              </div>
+              <div class="col-md-6">
+                <div class="flex d-flex align-items-center">
+
+                  <div class="images border  border-black">
+                    <img src="./infoimg/Mobile-App-Marketing-Services.webp" alt="">
+                  </div>
+
+                  <div class=" w-100  d-flex flex-column align-content-center ms-3 gap-4">
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">App Store Optimization Services</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Mobile App Marketing Services</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="techandautomation" class="service-tab-content row d-none">
+              <div class="col-md-6">
+
+                <div class="d-flex flex-column justify-content-center ">
+
+                  <h3 class="ms-5">Marketing Technology & Automation</h3>
+                  <p class="ms-5">Optimise the entire customer journey - Discover,Conversion ,Engagement ,<br> and
+                    Retention</p>
+                  <div class="ms-5"><button
+                      class="orangelight border-0 p-2 rounded-5 text-white mb-4 arrow-move">Discover Martech Services
+                      <span>&rarr;</span> </button></div>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+
+                <div class="flex d-flex align-items-center">
+
+                  <div class="images border  border-black">
+                    <img src="./infoimg/Martech1.webp" alt="">
+                  </div>
+
+                  <div class="d-flex flex-column align-content-center ms-3 gap-4">
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Martech Consulting Services</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Conversion Rate Optimization</p>
+                    </div>
+                    <div class="w-100 border borderleft cursor-pointer border-black flex">
+                      <p class="ms-2 mt-2">Customer Data Platform Services</p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- end of infosection  -->
+
+        <!-- start of advertisement section  -->
+        <div class="videosection">
+          <h1 class="text-center videotitle">Watch Our Video</h1>
+
+          <div class="homevideo w-100 d-flex justify-content-center">
+            <video class="vid " muted autoplay loop src="./video/advideo.mp4"></video>
+          </div>
+
+          <div class="d-flex  justify-content-center flex-column align-items-center">
+            <p class="text-center gray">Techmagnate is India’s premier digital marketing and SEO powerhouse. With over
+              18 years of proven success, our vision is to fuel <br> transformational growth for 300+ clients by 2030.
+              Ready to unlock your brand’s complete digital potential?</p>
+            <button class="px-2 py-2 rounded-5 text-white vidbtn arrow-move"> Speak to an Expert <span>
+                &rarr;</span></button>
+          </div>
+        </div>
+        <!-- end of adsvideo  -->
+
+        <!-- services  -->
+
+        <div class="container-fluid servicesection w90">
+          <div class="row align-items-start justify-content-center">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-md-5 mb-4 mb-md-0 ">
+              <h1 class="servicetitle text-center text-md-start">
+                Achieve a 2x Increase in <br> Avg. Monthly Traffic
+              </h1>
+
+              <div class="row mt-4 g-3 text-center text-md-start">
+                <div class="col-12 col-sm-6 d-flex align-items-center mb-2">
+                  <img src="./logo/trafic_iconnew.webp" alt="" class="service-icon me-2">
+                  <div>
+                    <span class="servicelistext">Get</span>
+                    <p class="mb-0">SERP Visibility</p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 d-flex align-items-center mb-2">
+                  <img src="./logo/2.webp" alt="" class="service-icon me-2">
+                  <div>
+                    <span class="servicelistext">Drive</span>
+                    <p class="mb-0">Qualified Leads</p>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex align-items-center mb-2">
+                  <img src="./logo/trafic_iconnew2.webp" alt="" class="service-icon me-2">
+                  <div>
+                    <span class="servicelistext">Grow</span>
+                    <p class="mb-0">Your Bottomline</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-md-7  serviceright d-flex flex-column align-items-center sliderservice swiper">
+
+              <!-- Cards container -->
+              <div class="  swiper-wrapper mt-4 ">
+
+                <!-- Card 1 -->
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="  d-flex flex-column ms-3 ">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/Dedicated-Professionals.webp" alt="" class="card-icon">
+                    </div>
+                    <strong class=" d-flex">Dedicated Teams for AI, <br> Automation, and Data <br> Analytics</strong>
+                    <p class="cardtextleft">
+                      Our specialized teams use AI, automation, and analytics to augment campaign
+                      performance, improve customer engagement, and unlock new growth opportunities.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="w-20  d-flex flex-column ms-3">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/In-House-Martech-Capabilities.webp" alt="" class="card-icon">
+                    </div>
+                    <strong class=" d-flex">In-House Martech <br> Capabilities</strong>
+                    <p class="cardtextleft">
+                      Our in-house expertise in CRM, AI, analytics, and marketing automation empowers businesses with
+                      data-driven, personalized marketing solutions that drive efficiency and ROI.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- card 3  -->
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="w-20  d-flex flex-column ms-3 ">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/Google-Premier-Partner-Agency.webp" alt="" class="card-icon">
+                    </div>
+                    <strong class=" d-flex">Google Premier Partner <br> Agency</strong>
+                    <p class="cardtextleft">
+                      As a Google Premier Partner, we have exclusive access to insights, tools, and support that let us
+                      to deliver superior search marketing performance for our clients.
+                    </p>
+                  </div>
+                </div>
+                <!-- card 4  -->
+
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="w-20  d-flex flex-column  ms-3">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/Expertise-across-the-entire-Search-Marketing-landscape_.webp" alt=""
+                        class="card-icon">
+                    </div>
+                    <strong class=" d-flex">Expertise Across the Entire Search <br> Landscape</strong>
+                    <p class="cardtextleft">
+                      From Universal Search to Video, ASO, and GBP, we optimize every search touchpoint to accelerate
+                      brand discoverability and conversions.
+                    </p>
+                  </div>
+                </div>
+                <!-- card 5  -->
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="w-20  d-flex flex-column ms-3">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/A-seasoned-team-with-genuine-enterprise-capabilities.webp" alt=""
+                        class="card-icon">
+                    </div>
+                    <strong class=" d-flex">Genuine Enterprise Capabilities</strong>
+                    <p class="cardtextleft">
+                      We offer enterprise-grade digital marketing solutions, combining scalability, security, and
+                      performance to meet the unique challenges of large websites and businesses.
+                    </p>
+                  </div>
+                </div>
+                <!-- card 6  -->
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="w-20  d-flex flex-column ms-3">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/Google-Certified-Search-Marketing-Team.webp" alt="" class="card-icon">
+                    </div>
+                    <strong class=" d-flex">Google Certified Search Marketing Team</strong>
+                    <p class="cardtextleft">
+                      To extend your brand’s visibility, engagement, and conversions, our team of Google-certified
+                      professionals uses the latest search marketing techniques.
+                    </p>
+                  </div>
+                </div>
+                <div class=" swiper-slide servicesliderliste text-center d-flex flex-column">
+                  <div class="w-20  d-flex flex-column ">
+
+                    <div class="servicelogo mb-3">
+                      <img src="servicelogo/In-House-Martech-Capabilities.webp" alt="" class="card-icon">
+                    </div>
+                    <strong class=" d-flex">In-House Martech <br> Capabilities</strong>
+                    <p class="cardtextleft">
+                      Our in-house expertise in CRM, AI, analytics, and marketing automation empowers businesses with
+                      data-driven, personalized marketing solutions that drive efficiency and ROI.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="swiperleft">&#10094;</div>
+              <div class="swiperright">&#10095;</div>
+
+              <!-- Button below cards -->
+              <button class="p-2 mt-4 mb-3 orangelight border-0 rounded-5 text-white speak-btn">
+                Speak to an Expert <span class="arrow">→</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- end of service  -->
+
+
+
+        <!-- award section  -->
+        <h1 class="text-center awardtitle mt-4 font-bold">Awards & Accolades for Techmagnate</h1>
+        <p class="text-center gray mb-4">
+          Don’t believe us? Even the Industry thinks we’re the best SEO service in India.
+          Over the years we have consistently won awards for our SEO and <br> Content Marketing
+          at various industry events! See our full list of awards and accolades here:
+        </p>
+
+
+      </div>
+
+      <div class="awards-container position-relative">
+        <div class="swiper awardsSwiper">
+          <div class="swiper-wrapper">
+            <!-- Your swiper-slide cards here -->
+            <div class="swiper-slide award-card  d-flex align-items-center gap-3">
+              <div class=" d-flex">
+                <div class="  ">
+                  <img class="awardimg m-3 rounded-3" src="./award/1.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Inkspell Unlocked 2025</strong>
+                  <p>Best SEO Campaign : Bajaj <br> Finserv Mutual Funds</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2  -->
+            <div class="swiper-slide award-card d-flex align-items-center gap-3">
+              <div class=" d-flex">
+                <div class="  ">
+                  <img class="awardimg m-2 rounded-3" src="./award/2.png" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Pitch Finovate BFSI <br> Marketing Awards 2025</strong>
+                  <p>SEO Driven<br> Programmatic Marketing <br>Category-Gold</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3  -->
+            <div class="swiper-slide award-card d-flex align-items-center gap-3">
+              <div class=" d-flex">
+                <div class="  ">
+                  <img class="awardimg m-3 rounded-3" src="./award/3.webp" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>MCube Award</strong>
+                  <p>For Best Digital<br> Marketing Campaign for <br>Educational Institution</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4  -->
+            <div class="swiper-slide award-card d-flex align-items-center gap-3">
+              <div class=" d-flex">
+                <div class="  ">
+                  <img class="awardimg m-2 rounded-3" src="./award/4.webp" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Digital Campaign <br>Award</strong>
+                  <p>Awarded for delivering <br> Digital Excellence in the <br>BFSI selector</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 5  -->
+            <div class="swiper-slide award-card d-flex align-items-center gap-3">
+              <div class=" d-flex">
+                <div class="  ">
+                  <img class="awardimg m-3 rounded-3" src="./award/5.webp" alt="">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                  <strong>Drivers of Digital Awards</strong>
+                  <p>Best Search Marketing<br> Campaign</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Navigation Buttons -->
+          <div class="swiper-button-left">&#10094;</div>
+          <div class="swiper-button-right">&#10095;</div>
+        </div>
+
+        <!-- end of award section  -->
+
+        <div class="mt-4 mb-5">
+          <p class="text-center gray">Not just SEO Services in India. Techmagnate should be your top choice of Digital
+            Marketing Agency if you’re looking for growth in 2025.</p>
+          <div class="d-flex justify-content-center">
+            <button class="p-2 rounded-5 border-0 px-3 text-white arrow-move orangelight">View All <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+
+        <!-- report card  -->
+        <div class="w-80 mx-auto rounded-4 reportcard">
+          <div class="border rounded-4 row g-0 position-relative">
+
+            <!-- Text Column -->
+            <div
+              class="reportcardtext rounded-4 col-md-6 d-flex flex-column align-items-start justify-content-center p-4">
+              <p class="lightblue">Digital Report Card</p>
+              <h1 class="reporttitle">
+                In 2025, We Delivered an Average Growth of 3X in Traffic and 113.38% in Leads for Our Clients.
+              </h1>
+              <button class="p-2 move-arrow rounded-5 text-white reportbtn border-0 arrow-move">
+                Download Report <span>&rarr;</span>
+              </button>
+            </div>
+
+            <!-- Image Column -->
+            <div class="reportimg col-md-6 d-flex justify-content-center align-items-center position-relative">
+              <img src="./report card/digital-report-card_img.webp" alt="">
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- end of report card  -->
+
+        <!-- start of stats-test-swiper -->
+        <div class="me-5 swiper stats-test-swiper mt-md-3 mt-4">
+
+          <div class="w-75 mx-auto">
+            <h1 class="text-center fw-bold">Driving Actual Business Growth for Our Clients</h1>
+            <p class="text-center">Read our case studies to see how we’ve created true value and delivered
+              transformational growth for our clients</p>
+          </div>
+
+          <div class="swiper-wrapper">
+
             <!-- Slide 1 -->
             <div class="swiper-slide">
-              <div
-                class=" bg-white d-flex frame justify-content-center align-items-center"
-              >
-                <img
-                  src="./testimoniallogo/bajaj.jpg"
-                  class="testimonialimage"
-                  alt="Bajaj Logo"
-                />
-              </div>
-              <div class="ms-3">
-                <p class="text-white">
-                  Techmagnate has delivered on its promise of significant growth.
-                  <br />
-                  Recently, we reached an impressive milestone...
-                </p>
-                <p class="cursor-pointer text-white text-decoration-underline">
-                  Read more
-                </p>
-                <strong class="text-white">Rohit Singh Chouhan</strong>
-                <p class="text-white">
-                  Senior Unit Manager - Bajaj: Online Payment (BBPS)
-                </p>
+              <div class="row align-items-center">
+                <!-- Content Column -->
+                <div class="col-md-6  p-3">
+                  <div class="statlogo mb-2 ms-5">
+                    <img src="./statspicture/bajaj-finserv-logo.webp" alt="" class="img-fluid" style="max-width: 80px;">
+                  </div>
+                  <h2 class="semititle ms-5">Bajaj Finserv Gold Loans SEO Case Study 400 Cr.+ disbursals of gold loans
+                  </h2>
+                  <p class="para ms-5">When Bajaj Finserv approached Techmagnate for their Gold Loans LoB, the NBFC was
+                    making an entry into a market saturated with established brands and heavy hitters. Their objective
+                    was to increase the overall volume of organic traffic and leads for their new offering.</p>
+                  <div class="mt-2 ms-5">
+                    <button class="p-2 border-0 orangelight rounded-5 text-white me-2 move-arrow">View Case Study
+                      <span>&rarr;</span></button>
+                    <button class="p-2 border border-black text-black rounded-5 bg-transparent move-arrow">View Our Work
+                      <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <div class="d-none d-md-block col-md-2">
+                  <img src="./drawline/hand-drawn-line.svg" alt="">
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-md-4 p-3 d-flex justify-content-center">
+                  <img src="./statspicture/Bajaj-Finserv.webp" alt="" class="img-fluid" style="max-height: 550px;">
+                </div>
               </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="swiper-slide">
-              <div
-                class="bg-white d-flex frame justify-content-center align-items-center"
-              >
-                <img
-                  src="./testimoniallogo/bajajhealthdoctorrx.jpg"
-                  class="testimonialimage"
-                  alt="Bajaj Logo"
-                />
-              </div>
-              <div class="ms-3">
-                <p class="text-white">
-                  I wanted to thank Techmagnate for their exceptional support <br> and quality strategies for our DoctorRx...
-                </p>
-                <p class="cursor-pointer text-white text-decoration-underline">
-                  Read more
-                </p>
-                <strong class="text-white">Sahana K</strong>
-                <p class="text-white">Manager (Maketing)</p>
+              <div class="row align-items-center">
+                <div class="col-md-6 p-3">
+                  <div class="statlogo mb-2 ms-5">
+                    <img src="./statspicture/image-1521.webp" alt="" class="img-fluid" style="max-width: 80px;">
+                  </div>
+                  <h2 class="semititle ms-5">Transformational Growth for an Online Pharmacy Retailer: 6x Increase in
+                    Monthly Traffic</h2>
+                  <p class="para ms-5">A leading online pharmacy in India, sought to enhance its digital presence and
+                    drive organic growth for its website. Focusing on affordable healthcare and medication through
+                    generic medicines for its customers, our client aimed to reach a wider audience and establish
+                    themselves as a trusted source for online medicine purchases.</p>
+                  <div class="mt-2 ms-5">
+                    <button class="p-2 border-0 orangelight rounded-5 text-white me-2 move-arrow">View Case Study
+                      <span>&rarr;</span></button>
+                    <button class="p-2 border border-black text-black rounded-5 bg-transparent move-arrow">View Our Work
+                      <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <div class="d-none d-md-block col-md-2">
+                  <img src="./drawline/hand-drawn-line.svg" alt="">
+                </div>
+
+                <div class="col-md-4 p-3 d-flex justify-content-center">
+                  <img src="./statspicture/truemeds.webp" alt="" class="img-fluid" style="max-height: 550px;">
+                </div>
               </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="swiper-slide">
-              <div
-                class="frame bg-white d-flex  justify-content-center align-items-center"
-              >
-                <img
-                  src="./testimoniallogo/unnamed.jpg"
-                  class="testimonialimage"
-                  alt="Bajaj Logo"
-                />
-              </div>
-              <div class="ms-3">
-                <p class="text-white">
-                 I want to extend my heartfelt appreciation for your exceptional <br> support in helping us achieve...
-                </p>
-                <p class="cursor-pointer text-white text-decoration-underline">
-                  Read more
-                </p>
-                <strong class="text-white">Nishant Karn</strong>
-                <p class="text-white">GM Revenue and Growth</p>
+              <div class="row align-items-center">
+                <div class="col-md-6 p-3">
+                  <div class="statlogo mb-2 ms-5">
+                    <img src="./statspicture/image-1520.webp" alt="" class="img-fluid" style="max-width: 80px;">
+                  </div>
+                  <h2 class="semititle ms-5">Bajaj Broking SEO Case Study: 502% Growth in Traffic & SERP Rankings</h2>
+                  <p class="para ms-5">Bajaj Broking, a subsidiary of Bajaj Finance Ltd., is a stockbroking and
+                    financial services company, offering a wide range of trading and investment services.</p>
+                  <div class="mt-2 ms-5">
+                    <button class="p-2 border-0 orangelight rounded-5 text-white me-2 move-arrow">View Case Study
+                      <span>&rarr;</span></button>
+                    <button class="p-2 border border-black text-black rounded-5 bg-transparent move-arrow">View Our Work
+                      <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <div class="d-none d-md-block col-md-2">
+                  <img src="./drawline/hand-drawn-line.svg" alt="">
+                </div>
+
+                <div class="col-md-4 p-3 d-flex justify-content-center">
+                  <img src="./statspicture/Bajaj-Broking.webp" alt="" class="img-fluid" style="max-height: 550px;">
+                </div>
               </div>
             </div>
+
           </div>
 
-          <!-- ✅ Slider Navigation -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- Pagination -->
+          <div class="swiper-pagination swiper-stats-pagination"></div>
         </div>
 
-        <!-- ✅ View All Button -->
-        <div class="d-flex justify-content-center mt-3">
-          <button class="p-2 orangelight text-white border-0 rounded-5 arrow-move">
-            View All <span>&rightarrow;</span> 
-          </button>
-        </div>
-      </div>
 
-      <!-- Right Side -->
-      <div class="right  ms-5">
-        <div class="d-flex flex-column align-items-center">
-          <img src="./testimoniallogo/Home-DRC1.webp" alt="Report Image" />
-          <h3 class="font-medium text-center mt-3 text-dark">
-            More impressive results on our <br />
-            Digital Report Card
-          </h3>
-          <div>
-            <button class="orangelight border-0 rounded-5 p-2 arrow-move text-white mt-2">
-              Download Reports <span>&rightarrow;</span> 
+        <!-- end of stats  -->
+
+
+        <!-- client testimonial  -->
+
+
+        <div class="clienttestimonial container mt-4">
+          <div class="row clienttest">
+
+            <!-- Left Side -->
+            <div class="border border-black lefty col-md-8 rounded-4 mb-3 p-3 leftyside">
+              <h1 class="font-big text-white fw-bold mt-2">
+                Client Testimonials
+              </h1>
+
+              <!-- Testimonial Slider -->
+              <div class="testimonial-slider swiper">
+                <div class="swiper-wrapper">
+
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="d-flex  mt-3 responsivelefty">
+
+                      <div class="bg-white  frame d-flex justify-content-center align-items-center mb-3 ">
+                        <img src="./testimoniallogo/bajaj.jpg" class="testimonialimage" alt="Bajaj Logo" />
+                      </div>
+                      <div class="textslider  ms-3">
+                        <p class="text-white">Techmagnate has delivered on its promise of significant growth. <br>
+                          Recently, we reached an impressive milestone...</p>
+                        <p class="cursor-pointer text-white text-decoration-underline">Read more</p>
+                        <strong class="text-white">Rohit Singh Chouhan</strong>
+                        <p class="text-white">Senior Unit Manager - Bajaj</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide rightyside">
+                    <div class="d-flex  mt-3 responsivelefty">
+
+                      <div class="bg-white  frame d-flex justify-content-center align-items-center mb-3">
+                        <img src="./testimoniallogo/bajajhealthdoctorrx.jpg" class="testimonialimage"
+                          alt="Bajaj Logo" />
+                      </div>
+                      <div class="textslider  ms-3">
+                        <p class="text-white">I wanted to thank Techmagnate for their exceptional <br> support and
+                          quality strategies for our DoctorRx...</p>
+                        <p class="cursor-pointer text-white text-decoration-underline">Read more</p>
+                        <strong class="text-white">Sahana K</strong>
+                        <p class="text-white">Manager (Marketing)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="d-flex responsivelefty mt-3">
+
+                      <div class="bg-white  frame d-flex justify-content-center align-items-center mb-3">
+                        <img src="./testimoniallogo/unnamed.jpg" alt="">
+                      </div>
+                      <div class="textslider  ms-3">
+                        <p class="text-white">I wanted to thank Techmagnate for their exceptional <br> support and
+                          quality strategies for our DoctorRx...</p>
+                        <p class="cursor-pointer text-white text-decoration-underline">Read more</p>
+                        <strong class="text-white">Sahana K</strong>
+                        <p class="text-white">Manager (Marketing)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- slide 4  -->
+                  <div class="swiper-slide">
+                    <div class="d-flex responsivelefty mt-3">
+
+                      <div class="bg-white  frame d-flex justify-content-center align-items-center mb-3">
+                        <img src="./testimoniallogo/gsf-2.jpg" class="testimonialimage" alt="" />
+                      </div>
+                      <div class="textslider  ms-3">
+                        <p class="text-white">We Have been working with Techmagnate for 2 years <br> and plan to
+                          continue working with ...</p>
+                        <p class="cursor-pointer text-white text-decoration-underline">Read more</p>
+                        <strong class="text-white">Nitin Gusain</strong>
+                        <p class="text-white">Manager - SEO & Web Assests</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- slide 5  -->
+                  <div class="swiper-slide">
+                    <div class="d-flex responsivelefty mt-3">
+
+                      <div class="bg-white  frame d-flex justify-content-center align-items-center mb-3">
+                        <img src="./testimoniallogo/launchmycareer-2.jpg" class="testimonialimage" alt="Bajaj Logo" />
+                      </div>
+                      <div class="textslider  ms-3">
+                        <p class="text-white"> We really liked the way Techmagnate planned in <br> implementing SEO
+                          strategies. Keep up the good...</p>
+                        <p class="cursor-pointer text-white text-decoration-underline">Read more</p>
+                        <strong class="text-white">Kshitij</strong>
+                        <p class="text-white">DM Manager</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <!-- View All Button -->
+              <div class="d-flex justify-content-center">
+                <button class="p-2 orangelight text-white border-0 rounded-5 arrow-move">
+                  View All <span>&rarr;</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+              <img src="./testimoniallogo/Home-DRC1.webp" alt="Report Image" class="img-fluid" />
+              <h3 class="font-medium text-center mt-3 text-dark">
+                More impressive results on our <br> Digital Report Card
+              </h3>
+              <button class="orangelight border-0 rounded-5 p-2 arrow-move text-white mt-2">
+                Download Reports <span>&rarr;</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!-- end of client testimonial  -->
+
+
+        <!-- search trends -->
+
+        <div class="mt-3 w95  mx-auto">
+          <h1 class=" mt-4 text-center font-big fw-bold">Search Trends Reports from Techmagnate</h1>
+          <p class="text-center gray">At Techmagnate, we frequently release trend reports for various industries that we
+            work closely with. Our reports highlight evolving trends in customer behavior, top-ranking <br> keywords and
+            categories, search volumes, market insights, and a lot more. Our reports are the starting point for top
+            brands in India towards creating a strong digital <br> roadmap and presence.</p>
+        </div>
+
+
+        <!-- search trend card  -->
+
+
+
+        <!-- Trend Cards Slider -->
+        <div class="trend-slider-wrapper mt-3 mx-auto">
+          <div class="trend-slider-container">
+            <div class="trend-slider swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="trend-card borderlight">
+                    <div class="trendimg">
+                      <img src="./trendcard/Womens-Wearnew.webp" class="rounded-3 w-100" alt="">
+                    </div>
+                    <div class=" mt-2  p-2">
+                      <strong class="bannertitle rounded-3 fw-medium">Ecommerce</strong>
+                      <p class="fw-semibold">Women's Wear Market Trends Report</p>
+                      <button class="bannerbtn bg-white rounded-4 px-2 py-1 arrow-move">Download PDF <span class="">
+                          &rightarrow;</span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="trend-card border borderlight">
+                    <div class="trendimg">
+                      <img src="./trendcard/Hotel-Industrynew.webp" class="rounded-3 w-100" alt="">
+                    </div>
+                    <div class=" mt-2  p-2">
+                      <strong class="bannertitle rounded-3 fw-medium">Hospitality</strong>
+                      <p class="fw-semibold">Hotel Industry Market Trends Report</p>
+                      <button class="bannerbtn bg-white rounded-4 px-3 py-1 arrow-move">Download PDF <span>
+                          &rightarrow;</span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <div class="trend-card borderlight">
+                    <div class="trendimg">
+                      <img src="./trendcard/Mutual-Fundsnew.webp" class="rounded-3 w-100" alt="">
+                    </div>
+                    <div class=" mt-2  p-2">
+                      <strong class="bannertitle rounded-3 fw-medium">Investment</strong>
+                      <p class="fw-semibold">Mutual Funds Market Trends Report</p>
+                      <button class="bannerbtn bg-white rounded-4 px-3 py-1 arrow-move">Download PDF
+                        <span>&rightarrow;</span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <div class="trend-card borderlight">
+                    <div class="trendimg">
+                      <img src="./trendcard/Personal-Loannew (2).webp" class="rounded-3 w-100" alt="">
+                    </div>
+                    <div class=" mt-2  p-2">
+                      <strong class="bannertitle rounded-3 fw-medium">Banking & Finance</strong>
+                      <p class="fw-semibold">Personal Loan Market Trends Report</p>
+                      <button class="bannerbtn bg-white rounded-4 px-3 py-1 arrow-move">Download PDF
+                        <span>&rightarrow;</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arrow buttons outside slider -->
+            <div class="swiper-button-prev trend-nav"></div>
+            <div class="swiper-button-next trend-nav"></div>
+          </div>
+
+          <!-- View All Button -->
+          <div class="w-100 mt-3 d-flex justify-content-center">
+            <button class="orangelight arrow-move text-white px-3 py-2 rounded-5 border-0 mb-3">
+              View All <span>&rightarrow;</span>
             </button>
           </div>
         </div>
-      </div>
-    </div>
-
-
-<!-- end of client testimonial  -->
-
-
-<!-- search trends -->
-
-<div class="mt-3 w95  mx-auto">
-    <h1 class=" mt-4 text-center font-big fw-bold">Search Trends Reports from Techmagnate</h1>
-    <p class="text-center gray">At Techmagnate, we frequently release trend reports for various industries that we work closely with. Our reports highlight evolving trends in customer behavior, top-ranking <br> keywords and categories, search volumes, market insights, and a lot more. Our reports are the starting point for top brands in India towards creating a strong digital <br> roadmap and presence.</p>
-</div>
-
-
-<!-- search trend card  -->
 
 
 
-<!-- Trend Cards Slider -->
-<div class="trend-slider-wrapper mt-3 mx-auto">
-  <div class="trend-slider-container">
-    <div class="trend-slider swiper">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="trend-card borderlight">
-            <div class="trendimg">
-              <img src="./trendcard/Womens-Wearnew.webp" class="rounded-3 w-100" alt="">
+        <!-- end  search trend card  -->
+        <!-- end of search trend  -->
+
+
+
+        <!-- start of latest blogs  -->
+        <h1 class="text-center">Latest Blog</h1>
+
+        <div class="blog-container d-flex flex-wrap gap-3">
+
+          <!-- Left Blog Card -->
+          <div class="left-blog borderlight rounded-3 p-3">
+            <div class="left-img">
+              <img src="./blogimage/Google-AI-Mode-Impact-on-SEO-for-banks-and-Finance-Sector.jpg"
+                class="w-100 rounded-3" alt="">
             </div>
-            <div class=" mt-2  p-2">
-              <strong class="bannertitle rounded-3 fw-medium">Ecommerce</strong>
-              <p class="fw-semibold">Women's Wear Market Trends Report</p>
-              <button class="bannerbtn bg-white rounded-4 px-2 py-1 arrow-move">Download PDF <span> &rightarrow;</span></button>
+            <div class="left-content mt-3">
+              <strong class="blog-category">AI & LLM SEO</strong>
+              <h4>Key Questions to Ask Your SEO Agency About LLM Optimization</h4>
+              <p><i class="bi bi-calendar2"></i> Oct 24, 2025</p>
+            </div>
+          </div>
+
+          <!-- Right Blog Cards -->
+          <div class="right-blog">
+
+            <!-- Card 1 -->
+            <div class="right-item borderlight d-flex p-3 rounded-3">
+              <div class="right-img">
+                <img class="w-100 rounded-3"
+                  src="./blogimage/Credit-Card-Marketing-Campaigns-Transformed-Through-SEO-1.jpg" alt="">
+              </div>
+              <div class="right-content d-flex flex-column ms-3">
+                <strong class="blog-category">SEO</strong>
+                <h6>How SEO Can Transform Credit Card Marketing Campaign – Strategies That Work</h6>
+                <p><i class="bi bi-calendar2"></i> Oct 07, 2025</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="right-item borderlight d-flex p-3 rounded-3 mt-3">
+              <div class="right-img">
+                <img class="w-100 rounded-3"
+                  src="./blogimage/How-to-Choose-the-Right-Enterprise-SEO-Agency-for-Your-BFSI-Brands.jpg" alt="">
+              </div>
+              <div class="right-content d-flex flex-column ms-3">
+                <strong class="blog-category">SEO</strong>
+                <h6>Is Your BFSI Business Working with the Right Enterprise SEO Partner? Evaluating ROI vs Cost</h6>
+                <p><i class="bi bi-calendar2"></i> Oct 07, 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center px-3 mt-3">
+          <button class="orangelight px-3 py-2 rounded-5 border-0 text-white arrow-move">
+            View All <span>&rightarrow;</span>
+          </button>
+        </div>
+
+
+        <!-- Latest Blogs Section -->
+
+
+
+        <!-- end of latest blogs  -->
+
+
+        <!-- start of frequently asked questions  -->
+        <div class="faq-section container py-5">
+          <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+
+          <!-- Category Tabs -->
+
+          <!-- swiper faq  -->
+          <!-- FAQ Swiper -->
+          <div class="position-relative">
+
+            <!-- Buttons -->
+            <div class="faq-prev nav-btn">‹</div>
+            <div class="faq-next nav-btn">›</div>
+
+            <div class="faqswiper swiper">
+              <div class="swiper-wrapper">
+                <p class="swiper-slide faq-slider active" data-category="forseoservices">SEO Services</p>
+                <p class="swiper-slide faq-slider " data-category="forppcandpaid">PPC and Paid Advertising</p>
+                <p class="swiper-slide faq-slider" data-category="forsocialmedia">Social Media Marketing</p>
+                <p class="swiper-slide faq-slider" data-category="forcontentmarketing">Content Marketing</p>
+                <p class="swiper-slide faq-slider" data-category="foraso">ASO (App Store Optimization)</p>
+                <p class="swiper-slide faq-slider" data-category="formartech">Martech Services</p>
+                <p class="swiper-slide faq-slider" data-category="forprocess">Process-Related</p>
+                <p class="swiper-slide faq-slider" data-category="forpricing">Pricing and Packages</p>
+                <p class="swiper-slide faq-slider" data-category="forresults">Results and Case Studies</p>
+                <p class="swiper-slide faq-slider" data-category="fortechnical">Technical and Support</p>
+                <p class="swiper-slide faq-slider" data-category="formisc">Miscellaneous</p>
+                <p class="swiper-slide faq-slider" data-category="forother">Other</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- swiperend  -->
+          <!-- FAQ Accordion -->
+
+
+          <div class="faq-container">
+
+
+            <div class="faq-items forseoservices">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Techmagnate combines data-driven insights, AI tools, and proven frameworks. Our
+                  strategies are built around measurable ROI, ethical practices, and a deep understanding of Delhi’s
+                  competitive digital landscape.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Yes, Techmagnate delivers AI-driven and LLM-optimized SEO strategies that
+                  enhance brand visibility across ChatGPT, Gemini, and Perplexity by aligning website content with
+                  evolving search and language model algorithms.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Delhi businesses should focus on AI-ready SEO, voice search optimization, local
+                  listings, high-quality content, mobile-first experience, and E-E-A-T signals to build credibility and
+                  sustainable growth.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Yes. Local SEO builds strong visibility in Delhi searches, helping smaller
+                  businesses appear for local intent keywords, attract nearby customers, and compete effectively with
+                  larger national players.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Improving rankings in Delhi needs targeted keywords, local SEO strategies,
+                  quality backlinks, fast-loading pages, and engaging content that connects with Delhi audiences while
+                  meeting Google’s quality standards.</div>
+              </div>
+
+            </div>
+
+
+
+
+            <div class="faq-items forppcandpaid">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the main benefits of PPC?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Instant traffic, precise targeting, measurable ROI, scalable campaigns, brand
+                  visibility, cost control, and competitive advantage over rivals.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are CPC, CTR, and CPA in PPC?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">CPC (Cost Per Click) – The amount paid for each click on an ad.
+                  CTR (Click-Through Rate) – Percentage of people who click the ad. (Clicks / Impressions) × 100
+                  CPA (Cost Per Acquisition) – Cost to acquire a customer. (Total Cost / Total Conversions)</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What is the difference between SEO and PPC?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">SEO is centered around organic traffic and offers long-term solutions, while PPC
+                  (Pay-Per-Click) generates fast traffic from paid ads, but that traffic will stall until the money
+                  finishes. SEO, on the other hand, can be cost effective in the long run, whereas for PPC, cash flows
+                  continue.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does PPC improve SEO rankings?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">PPC does not directly impact SEO rankings, but it can drive traffic and improve
+                  site performance, indirectly supporting SEO.</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO and PPC work together?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">Yes, combining both strategies can enhance online visibility, improve results,
+                  and provide valuable insights into user behaviour.</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items forsocialmedia">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items forcontentmarketing">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items foraso">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items formartech">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items forprocess">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items forpricing">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items forresults">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items fortechnical">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items formisc">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+            <div class="faq-items forother">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How does Techmagnate’s SEO strategy differ from other agencies in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Does Techmagnate offer AI-driven or LLM-optimized SEO solutions?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What are the top SEO trends businesses in Delhi should focus on?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Can SEO help local Delhi businesses compete with national brands?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How to improve my website rankings in Delhi?
+                  <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">...</div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+          <!-- end of frequently asked questions   -->
+
+          <!-- startoftechmagnetnews -->
+
+          <div class=" w80 d-none py-5 d-md-block">
+            <h1 class="text-center mb-4 fw-bolder">Techmagnet in the News</h1>
+
+            <div class="row g-4">
+              <!-- First News Card -->
+              <div class="col-md-6">
+                <div class="d-flex news-card p-3 border rounded align-items-center gap-3">
+                  <div class="news-img overflow-hidden rounded" style="width: 80%;">
+                    <img src="./techmagnet news/Online-Pharmacy-Trends-Report-2024.webp" alt="">
+                  </div>
+                  <div class="news-text">
+                    <strong>05, Dec 2024</strong>
+                    <p>Online Pharmacy Trends Report 2024: Delhi Leads Searches, Mumbai Sees Growth</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second News Card -->
+              <div class="col-md-6">
+                <div class="d-flex news-card p-3 border rounded align-items-center gap-3">
+                  <div class="news-img overflow-hidden rounded" style="width: 80%;">
+                    <img src="./techmagnet news/appliance-searches.webp" alt="">
+                  </div>
+                  <div class="news-text">
+                    <strong>25, Nov 2024</strong>
+                    <p>Appliance Searches Surge 18.41%, Reveals Techmagnate’s Latest Market Report</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-4">
+              <button class="px-3 py-2 rounded-5 border-0 text-white orangelight arrow-move">View All
+                <span>&rarr;</span></button>
+            </div>
+          </div>
+
+
+          <!-- end of techmagnetnews  -->
+
+          <!--start featured on  -->
+          <div class="featured-section  w85  ">
+
+            <h1 class="fw-bolder text-center mb-4">As Featured On</h1>
+            <!-- mobile view for the swiper  -->
+            <div class="swiper">
+
+              <div>
+
+              </div>
+
+            </div>
+
+
+            <!-- desktop view   -->
+            <div class="featuredlogo d-flex justify-content-center gap-4 flex-wrap d-md-flex d-none">
+              <div><img src="./featuredlogo/afaqs.png" alt=""></div>
+              <div><img src="./featuredlogo/campaign.png" alt=""></div>
+              <div><img src="./featuredlogo/e4m.png" alt=""></div>
+              <div><img src="./featuredlogo/marketing-mind.png" alt=""></div>
+              <div><img src="./featuredlogo/mediabrief.png" alt=""></div>
+              <div><img src="./featuredlogo/socialsamosa.png" alt=""></div>
+              <div><img src="./featuredlogo/theeconomicstimes.png" alt=""></div>
+            </div>
+
+            <div class="featured-slider swiper mySwiper d-md-block d-lg-none ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./featuredlogo/afaqs.png" alt=""></div>
+                <div class="swiper-slide"><img src="./featuredlogo/campaign.png" alt=""></div>
+                <div class="swiper-slide"><img src="./featuredlogo/e4m.png" alt=""></div>
+                <div class="swiper-slide"><img src="./featuredlogo/marketing-mind.png" alt=""></div>
+                <div class="swiper-slide"><img src="./featuredlogo/mediabrief.png" alt=""></div>
+                <div class="swiper-slide"><img src="./featuredlogo/socialsamosa.png" alt=""></div>
+                <div class="swiper-slide"><img src="./featuredlogo/theeconomicstimes.png" alt=""></div>
+              </div>
+
+
+            </div>
+
+
+            <h1 class="text-center fw-bolder mt-5">Let's Do Great Work Together</h1>
+            <p class="text-center">Get in touch with our SEO experts today</p>
+
+          </div>
+
+          <!-- end of featured on  -->
+
+          <!-- start of contact info  -->
+
+          <div class="row p-4 gy-4">
+            <!-- LEFT SECTION -->
+            <div class="col-md-4 p-4 rounded-3 bg-light">
+
+              <!-- City & Corporate -->
+              <div class="d-flex justify-content-between align-items-center mb-3 first">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./formlogo/delhi.svg" alt="">
+                  <h5 class="m-0 fw-bold">Delhi</h5>
+                </div>
+                <button class="btn corporate-btn border border-2 border-dotted rounded-pill px-3 py-1">
+                  Corporate Office
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="location mb-3">
+                <div class="">
+                  <strong>Location:</strong>
+                  <div>
+                    <p class="mb-0">
+                      <img src="./formlogo/apartment.svg" alt="">
+                      A-24/8, 1st Floor, Rathi Tower, NH-19, Mohan Cooperative Industrial Estate, New Delhi, 110044
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="email mb-3">
+                <div class="">
+                  <div>
+
+
+                    <h6 class=" fw-semibold">Email:</h6>
+                    <div class="d-flex gap-2">
+                      <img src="./formlogo/email.svg" alt="">
+                      <p class="m-0 ">enquiry@techmagnate.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sales -->
+              <div class="sales mb-3">
+                <div class=" align-items-center gap-2">
+                  <div class="fw-bold">Sales Enquiry</div>
+                  <div class="d-flex gap-2"><img src="./formlogo/phone.svg" alt="">
+                    <p class="m-0 ">+91-9910308266</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HR -->
+              <div class="hr mb-3">
+                <div class="">
+
+                  <h6 class="m-0 fw-semibold">HR:</h6>
+                  <div class="d-flex gap-2">
+                    <img src="./formlogo/email.svg" alt="">
+                    <p class="m-0">jobs@techmagnate.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <button class="btn direction-btn border border-dark rounded-pill px-3 py-2">
+                  Get Direction
+                  <i class="fa-solid fa-arrow-right ms-2 arrow-move"></i>
+                </button>
+                <p class="view-all m-0">
+                  View All <i class="fa-solid fa-arrow-right ms-1"></i>
+                </p>
+              </div>
+
+            </div>
+
+            <!-- RIGHT SECTION -->
+            <div class="col-md-8  p-4 rounded-3 bg-white">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold fs-3">Contact Info*</h4>
+
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="p-3 rounded-4 form-control" placeholder="Name *" />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="p-3 rounded-4 form-control" placeholder="Email Id *" />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="p-3 rounded-4 form-control" placeholder="Mobile No *" />
+                </div>
+                <div class="col-md-6">
+                  <select class="p-3 rounded-4 form-select">
+                    <option selected>Choose Services</option>
+                    <option>SEO</option>
+                    <option>AI SEO/LLMO</option>
+                    <option>Digital Marketing</option>
+                    <option>PPC/Paid Campaign</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="4" placeholder="Your Message..."></textarea>
+                </div>
+                <div class="col-12 d-flex align-items-start gap-2">
+                  <input type="checkbox" class="custom-checkbox mt-1" />
+                  <span>
+                    By registering here, I agree to Techmagnet's
+                    <span class="tos-link">Terms of Service</span> and
+                    <span class="tos-link">Privacy Policy</span>
+                  </span>
+                </div>
+                <div class="col-3">
+                  <button
+                    class=" ms-3 border-0 rounded-5 orangelight text-white w-100 py-2 arrow-move d-flex justify-content-center">Submit
+                    Now <span>&rarr;</span> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- end of contact info  -->
+
+
+
+
+    </main>
+    <!-- end of main section  -->
+
+    <!-- start of footer  -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+
+        <!-- Top Section -->
+        <div class="row align-items-center mb-5  rounded-5 ">
+          <div class="col-md-5 mb-3 mb-md-0 p-4 bg-blue rounded-5 ">
+            <h3 class="fw-light mb-3">Are you ready for transformational business growth?</h3>
+            <a href="tel:+919910308266" class="text-light text-decoration-none">
+              <strong>Call us: <span class="fs-4">+91-9910308266</span></strong>
+            </a>
+          </div>
+          <div class="d-none mb-3 mb-md-0 p-4 col-md-3  rounded-5 d-md-flex">
+            <img src="footer/footerheader/Group-1574.svg" alt="">
+            <div class="m-3 ">
+              <button class="rounded-5 border-0 px-3 py-3 limegreen arrow-move fw-semibold   text-white">
+                Request a Call Back
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div class="d-flex flex-column justify-content-center justify-content-center">
+              <h4 class="mt-3 mb-1 text-center">TechMagnate</h4>
+              <p class="text-white text-center"> A Google Premier Partner Agency</p>
+              <img src="./footer/google-premier.svg" alt="Google Premier Partner" style="height:90px;">
             </div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="trend-card border borderlight">
-            <div class="trendimg">
-              <img src="./trendcard/Hotel-Industrynew.webp" class="rounded-3 w-100" alt="">
+        <hr class="border-secondary mb-4">
+
+        <!-- Middle Section -->
+        <div class="row gy-4">
+
+          <!-- About -->
+          <div class="col-md-3">
+            <img src="./footer/logo-white.svg" alt="TechMagnate Logo" class="mb-3" style="max-width:150px;">
+            <p>Techmagnate is an award-winning performance marketing agency. We deliver transformational growth for our
+              clients through digital excellence.</p>
+            <div class="d-flex gap-3 align-items-center mt-3">
+              <img src="./footer/google-premier.svg" alt="Google Premier Partner" style="height:65px;">
+              <img src="./footer/clutch.svg" alt="Clutch" style="height:35px;">
             </div>
-            <div class=" mt-2  p-2">
-              <strong class="bannertitle rounded-3 fw-medium">Hospitality</strong>
-              <p class="fw-semibold">Hotel Industry Market Trends Report</p>
-              <button class="bannerbtn bg-white rounded-4 px-3 py-1 arrow-move">Download PDF <span> &rightarrow;</span></button>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3">Our Services</h5>
+            <ul class="list-unstyled">
+              <li>Search Engine Optimization</li>
+              <li>Digital Marketing</li>
+              <li>App Marketing</li>
+              <li>Content Marketing</li>
+              <li>PPC/Paid Marketing</li>
+              <li>Marketing Technology</li>
+              <li>Web Designing & Development</li>
+            </ul>
+          </div>
+
+          <!-- Company & Tools -->
+          <div class="col-md-2">
+            <h5 class="fw-bold mb-3">Company</h5>
+            <ul class="list-unstyled">
+              <li>About Us</li>
+              <li>Press Releases</li>
+              <li>Careers</li>
+              <li>Best Place to Work</li>
+              <li>Awards & Recognition</li>
+            </ul>
+
+            <h5 class="fw-bold mt-4 mb-3">Tools</h5>
+            <ul class="list-unstyled">
+              <li>SEO ROI Calculator</li>
+              <li>PPC ROI Calculator</li>
+              <li>CRO ROI Calculator</li>
+            </ul>
+          </div>
+
+          <!-- Industries -->
+          <div class="col-md-2">
+            <h5 class="fw-bold mb-3">Industries</h5>
+            <ul class="list-unstyled">
+              <li>BFSI</li>
+              <li>B2B</li>
+              <li>Education</li>
+              <li>Healthcare</li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-2">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>Blog</li>
+              <li>FAQs</li>
+              <li>Web Stories</li>
+              <li>Case Studies</li>
+              <li>Testimonials</li>
+              <li>Portfolio</li>
+              <li>Search Trends Report</li>
+              <li>Digital Report Card</li>
+              <li>BlogX</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-secondary mt-5 mb-3">
+
+        <div class="row align-content-center">
+          <div class="col-md-6 ">
+            <div class=" p-2 d-flex gap-3">
+
+              <!-- facebook  -->
+              <svg x="0px" y="0px" width="35" height="35" viewBox="0,0,256,256">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <g transform="scale(5.33333,5.33333)">
+                    <path
+                      d="M42,37c0,2.762 -2.238,5 -5,5h-26c-2.761,0 -5,-2.238 -5,-5v-26c0,-2.762 2.239,-5 5,-5h26c2.762,0 5,2.238 5,5z"
+                      fill="#0064e0"></path>
+                    <path
+                      d="M34.368,25h-3.368v13h-5v-13h-3v-4h3v-2.41c0.002,-3.508 1.459,-5.59 5.592,-5.59h3.408v4h-2.287c-1.609,0 -1.713,0.6 -1.713,1.723v2.277h4z"
+                      fill="#ffffff"></path>
+                  </g>
+                </g>
+              </svg>
+
+
+              <!-- x logo  -->
+              <svg x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+                <path fill="#212121" fill-rule="evenodd"
+                  d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28    c2.209,0,4,1.791,4,4v28C42,40.209,40.209,42,38,42z"
+                  clip-rule="evenodd"></path>
+                <path fill="#fff"
+                  d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z">
+                </path>
+                <polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"></polygon>
+                <polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"></polygon>
+              </svg>
+              <!-- youtube logo  -->
+
+              <svg x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+                <path fill="#FF3D00"
+                  d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                </path>
+                <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+              </svg>
+
+              <!-- linkedin  -->
+              <svg x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+                <path fill="#0288D1"
+                  d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                </path>
+                <path fill="#FFF"
+                  d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                </path>
+              </svg>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class=" p-2 d-flex gap-4 justify-content-end">
+
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img src="./footer/google-rating.webp" alt="">
+                <p class="mb-0">4.1/5 Rating</p>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img src="./footer/clutch-rating.webp" alt="">
+                <p class="mb-0">4.5 Rating</p>
+              </div>
+
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img src="./footer/goodform-rating.webp" alt="">
+                <p class="mb-0">4.2/5 Rating</p>
+              </div>
+
+              <div class="d-flex align-items-center gap-2">
+                <img src="./footer/dmca.svg" alt="">
+              </div>
+
             </div>
           </div>
         </div>
 
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="trend-card borderlight">
-            <div class="trendimg">
-              <img src="./trendcard/Mutual-Fundsnew.webp" class="rounded-3 w-100" alt="">
-            </div>
-            <div class=" mt-2  p-2">
-              <strong class="bannertitle rounded-3 fw-medium">Investment</strong>
-              <p class="fw-semibold">Mutual Funds Market Trends Report</p>
-              <button class="bannerbtn bg-white rounded-4 px-3 py-1 arrow-move">Download PDF  <span>&rightarrow;</span></button>
-            </div>
+
+        <hr class="border-secondary mt-5 mb-3">
+
+
+        <!-- Bottom Section -->
+
+
+
+
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <p class="mb-2 mb-md-0">© <span id="year"></span> Techmagnate®. All rights reserved.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light text-decoration-none">Sitemap</a>
+            <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+            <a href="#" class="text-light text-decoration-none">CSR Policy</a>
           </div>
         </div>
 
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="trend-card borderlight">
-            <div class="trendimg">
-              <img src="./trendcard/Personal-Loannew (2).webp" class="rounded-3 w-100" alt="">
-            </div>
-            <div class=" mt-2  p-2">
-              <strong class="bannertitle rounded-3 fw-medium">Banking & Finance</strong>
-              <p class="fw-semibold">Personal Loan Market Trends Report</p>
-              <button class="bannerbtn bg-white rounded-4 px-3 py-1 arrow-move">Download PDF  <span>&rightarrow;</span></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Arrow buttons outside slider -->
-    <div class="swiper-button-prev trend-nav"></div>
-    <div class="swiper-button-next trend-nav"></div>
-  </div>
-
-  <!-- View All Button -->
-  <div class="w-100 mt-3 d-flex justify-content-center">
-    <button class="orangelight arrow-move text-white px-3 py-2 rounded-5 border-0 mb-3">
-      View All <span>&rightarrow;</span>
-    </button>
-  </div>
-</div>
-
-
-
-<!-- end  search trend card  -->
-<!-- end of search trend  -->
-
-
-
-<!-- start of latest blogs  -->
-<h1 class="text-center">Latest Blog</h1>
-<div class="blogcontain ">
-
-
-  <div class="leftblog borderlight rounded-3 p-3">
-
-    <div class="leftimg  "> 
-<img src="./blogimage/Google-AI-Mode-Impact-on-SEO-for-banks-and-Finance-Sector.jpg" class="w-100 rounded-3" alt="">
-    </div>
-
-    <div class="leftcontain  rounded-4 ">
-<strong class="blogren ">AI & LLM SEO</strong>
-<h4>Key Questions to Ask Your SEO Agency About LLM Optimization</h4>
-
-<p> <i class="calendar-icon bi bi-calendar2"></i> Oct 24,2025</p>
-    </div>
-
-  </div>
-
-  <div class="rightblog  ">
-
-    <div class="upperblog borderlight ms-4 d-flex p-3 rounded-3">
-
-      <div class="rightimg rightblogimg " >
-<img class="w-100 rounded-3" src="./blogimage/Credit-Card-Marketing-Campaigns-Transformed-Through-SEO-1.jpg" alt="">
       </div>
 
-      <div class="blogcontain d-flex  flex-column ms-3">
-<strong class="blogren">SEO</strong>
-<h6>How SEO Can Transform Credit Card Marketing Campaign- Strategies That Work</h6>
-<p> <i class="calendar-icon bi bi-calendar2"></i> Oct 07,2025</p>
-      </div>
+    </footer>
 
-    </div>
-    <div class="upperblog d-flex p-2 mt-3 ms-4 borderlight p-3  rounded-3">
+    <!-- end of footer  -->
 
-      <div class="rightimg rightblogimg rounded-4  ">
-<img class="w-100 rounded-4" src="./blogimage/How-to-Choose-the-Right-Enterprise-SEO-Agency-for-Your-BFSI-Brands.jpg" aria-colspan="" alt="">
-      </div>
 
-      <div class="blogcontain d-flex flex-column ms-3">
-<strong class="blogren">SEO</strong>
-<h6>Is Your BFSI Business Working with the br Right Enterprise SEO Partner ? Evaluating ROI vs Cost</h6>
-<p> <i class="calendar-icon bi bi-calendar2"></i> Oct 07,2025</p>
-      </div>
-
-    </div>
-
-    
-
-  </div>
-  
-</div>
-<div class="d-flex justify-content-center px-3 "><button class="orangelight px-3 py-2 rounded-4 border-0 text-white arrow-move">View All <span> &rightarrow;</span> </button></div>
-
-<!-- Latest Blogs Section -->
-
-
-
-    <!-- end of latest blogs  -->
-
-    <!-- start of frequently asked questions  -->
-   <div class="faq-section container py-5">
-    <h1 class="text-center mb-4">Frequently Asked Questions</h1>
-
-    <!-- Category Tabs -->
-    
-
-  
-
-  <!-- FAQ Accordion -->
-  
-
-
-<div class="faq-container">
-
-  <div class="faq-item">
-    <button class="faq-question">
-      What is SEO in Financial Services?
-      <span class="icon"></span>
-    </button>
-    <div class="faq-answer">
-      SEO for financial services improves search visibility while maintaining compliance and accuracy.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Why is Local SEO important for banks?
-      <span class="icon"></span>
-    </button>
-    <div class="faq-answer">
-      Local SEO helps banks and branches appear on Google Maps for nearby customers.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      How long does SEO take to show results?
-      <span class="icon"></span>
-    </button>
-    <div class="faq-answer">
-      SEO results usually take 3–6 months depending on competition and strategies used.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      What type of content helps finance SEO?
-      <span class="icon"></span>
-    </button>
-    <div class="faq-answer">
-      Blogs, landing pages, financial tools, FAQs, case studies, and compliance-friendly resources.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Are backlinks important in finance SEO?
-      <span class="icon"></span>
-    </button>
-    <div class="faq-answer">
-      Yes, high-authority backlinks increase trust and improve rankings for finance websites.
-    </div>
-  </div>
-
-</div>
-
-
-    <!-- end of frequently asked questions   -->
-
-    <!-- startoftechmagnetnews -->
-
-<div class="news-section container py-5">
-  <h1 class="text-center mb-4">Techmagnet in the News</h1>
-
-  <div class="row g-4">
-    <!-- First News Card -->
-    <div class="col-md-6">
-      <div class="d-flex news-card p-3 border rounded align-items-center gap-3">
-        <div class="news-img overflow-hidden rounded" style="width: 40%;">
-          <img src="./techmagnet news/Online-Pharmacy-Trends-Report-2024.webp" alt="">
-        </div>
-        <div class="news-text">
-          <strong>05, Dec 2024</strong>
-          <p>Online Pharmacy Trends Report 2024: Delhi Leads Searches, Mumbai Sees Growth</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Second News Card -->
-    <div class="col-md-6">
-      <div class="d-flex news-card p-3 border rounded align-items-center gap-3">
-        <div class="news-img overflow-hidden rounded" style="width: 40%;">
-          <img src="./techmagnet news/appliance-searches.webp" alt="">
-        </div>
-        <div class="news-text">
-          <strong>25, Nov 2024</strong>
-          <p>Appliance Searches Surge 18.41%, Reveals Techmagnate’s Latest Market Report</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- View All Button -->
-  <div class="text-center mt-4">
-    <button class="px-3 py-2 rounded-5 border-0 text-white orangelight arrow-move">View All <span>&rarr;</span></button>
-  </div>
-</div>
-
-
-    <!-- end of techmagnetnews  -->
-
-    <!--start featured on  -->
-<div class="featured-section m-4">
-
-  <h1 class="fw-bolder text-center mb-4">As Featured On</h1>
-
-  <div class="featuredlogo d-flex justify-content-center gap-4 flex-wrap">
-    <div><img src="./featuredlogo/afaqs.png" alt=""></div>
-    <div><img src="./featuredlogo/campaign.png" alt=""></div>
-    <div><img src="./featuredlogo/e4m.png" alt=""></div>
-    <div><img src="./featuredlogo/marketing-mind.png" alt=""></div>
-    <div><img src="./featuredlogo/mediabrief.png" alt=""></div>
-    <div><img src="./featuredlogo/socialsamosa.png" alt=""></div>
-    <div><img src="./featuredlogo/theeconomicstimes.png" alt=""></div>
-  </div>
-
-  <h1 class="text-center fw-bolder mt-5">Let's Do Great Work Together</h1>
-  <p class="text-center">Get in touch with our SEO experts today</p>
-
-</div>
-
-<!-- end of featured on  -->
-
-
-<!-- start of contact info  -->
-
-<div class="row p-4 gy-4">
-  <!-- LEFT SECTION -->
-  <div class="col-md-4 p-4 rounded-3 bg-light">
-
-    <!-- City & Corporate -->
-    <div class="d-flex justify-content-between align-items-center mb-3 first">
-      <div class="d-flex align-items-center gap-2">
-        <i class="fa-solid fa-location-dot icon fs-5"></i>
-        <h5 class="m-0 fw-bold">Delhi</h5>
-      </div>
-      <button class="btn corporate-btn border border-2 border-dotted rounded-pill px-3 py-1">
-        Corporate Office
-      </button>
-    </div>
-
-    <!-- Location -->
-    <div class="location mb-3">
-      <div class="d-flex align-items-start gap-3">
-        <i class="fa-solid fa-building icon fs-5 mt-1"></i>
-        <div>
-          <strong>Location:</strong>
-          <p class="mb-0">
-            A-24/8, 1st Floor, Rathi Tower, NH-19, Mohan Cooperative Industrial Estate, New Delhi, 110044
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Email -->
-    <div class="email mb-3">
-      <div class="d-flex align-items-center gap-3">
-        <i class="fa-solid fa-envelope icon"></i>
-        <div>
-          <h6 class="m-0 fw-semibold">Email:</h6>
-          <p class="m-0">enquiry@techmagnate.com</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sales -->
-    <div class="sales mb-3">
-      <div class="d-flex align-items-center gap-3">
-        <i class="fa-solid fa-phone icon"></i>
-        <p class="m-0 fw-semibold">+91-9910308266</p>
-      </div>
-    </div>
-
-    <!-- HR -->
-    <div class="hr mb-3">
-      <div class="d-flex align-items-center gap-3">
-        <i class="fa-solid fa-envelope icon"></i>
-        <div>
-          <h6 class="m-0 fw-semibold">HR:</h6>
-          <p class="m-0">jobs@techmagnate.com</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Buttons -->
-    <div class="d-flex justify-content-between align-items-center mt-4">
-      <button class="btn direction-btn border border-dark rounded-pill px-3 py-2">
-        Get Direction
-        <i class="fa-solid fa-arrow-right ms-2 arrow-move"></i>
-      </button>
-      <p class="view-all m-0">
-        View All <i class="fa-solid fa-arrow-right ms-1"></i>
-      </p>
-    </div>
-
-  </div>
-
-  <!-- RIGHT SECTION -->
-  <div class="col-md-8 border  p-4 rounded-3 bg-white">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h4 class="fw-bold">Contact Info*</h4>
-      <i class="fa-solid fa-id-card icon fs-3"></i>
-    </div>
-
-    <div class="row g-3">
-      <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Name *" />
-      </div>
-      <div class="col-md-6">
-        <input type="email" class="form-control" placeholder="Email Id *" />
-      </div>
-      <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Mobile No *" />
-      </div>
-      <div class="col-md-6">
-        <select class="form-select">
-          <option selected>Choose Services</option>
-          <option>SEO</option>
-          <option>AI SEO/LLMO</option>
-          <option>Digital Marketing</option>
-          <option>PPC/Paid Campaign</option>
-        </select>
-      </div>
-      <div class="col-12">
-        <textarea class="form-control" rows="4" placeholder="Your Message..."></textarea>
-      </div>
-      <div class="col-12 d-flex align-items-start gap-2">
-        <input type="checkbox" class="custom-checkbox mt-1" />
-        <span>
-          By registering here, I agree to Techmagnet's 
-          <span class="tos-link">Terms of Service</span> and 
-          <span class="tos-link">Privacy Policy</span>
-        </span>
-      </div>
-      <div class="col-3">
-        <button class=" ms-3 border-0 rounded-5 orangelight text-white w-100 py-2 arrow-move d-flex justify-content-center">Submit Now <span>&rarr;</span> </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- end of contact info  -->
-
-
-
-
-</main>
-<!-- end of main section  -->
-
-<!-- start of footer  -->
-<footer class="bg-dark text-light pt-5 pb-3">
-  <div class="container">
-
-    <!-- Top Section -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6 mb-3 mb-md-0">
-        <h3 class="fw-bold mb-3">Are you ready for transformational business growth?</h3>
-        <a href="tel:+919910308266" class="text-light text-decoration-none">
-          <strong>Call us:</strong> +91-9910308266
-        </a>
-      </div>
-      <div class="col-md-6 text-md-end">
-        <button class="btn btn-warning arrow-move fw-semibold px-4 py-2 mb-3 mb-md-0">
-          Request a Call Back <span>&rarr;</span>
-        </button>
-        <div>
-          <h4 class="mt-3 mb-1">TechMagnate</h4>
-          <p class="text-muted mb-0">A Google Premier Partner Agency</p>
-        </div>
-      </div>
-    </div>
-
-    <hr class="border-secondary mb-4">
-
-    <!-- Middle Section -->
-    <div class="row gy-4">
-
-      <!-- About -->
-      <div class="col-md-3">
-        <img src="./footer/logo-white.svg" alt="TechMagnate Logo" class="mb-3" style="max-width:150px;">
-        <p>Techmagnate is an award-winning performance marketing agency. We deliver transformational growth for our clients through digital excellence.</p>
-        <div class="d-flex gap-3 align-items-center mt-3">
-          <img src="./footer/google-premier.svg" alt="Google Premier Partner" style="height:35px;">
-          <img src="./footer/clutch.svg" alt="Clutch" style="height:35px;">
-        </div>
-      </div>
-
-      <!-- Services -->
-      <div class="col-md-2">
-        <h5 class="fw-bold mb-3">Our Services</h5>
-        <ul class="list-unstyled">
-          <li>Search Engine Optimization</li>
-          <li>Digital Marketing</li>
-          <li>App Marketing</li>
-          <li>Content Marketing</li>
-          <li>PPC/Paid Marketing</li>
-          <li>Marketing Technology</li>
-          <li>Web Designing & Development</li>
-        </ul>
-      </div>
-
-      <!-- Company & Tools -->
-      <div class="col-md-3">
-        <h5 class="fw-bold mb-3">Company</h5>
-        <ul class="list-unstyled">
-          <li>About Us</li>
-          <li>Press Releases</li>
-          <li>Careers</li>
-          <li>Best Place to Work</li>
-          <li>Awards & Recognition</li>
-        </ul>
-
-        <h5 class="fw-bold mt-4 mb-3">Tools</h5>
-        <ul class="list-unstyled">
-          <li>SEO ROI Calculator</li>
-          <li>PPC ROI Calculator</li>
-          <li>CRO ROI Calculator</li>
-        </ul>
-      </div>
-
-      <!-- Industries -->
-      <div class="col-md-2">
-        <h5 class="fw-bold mb-3">Industries</h5>
-        <ul class="list-unstyled">
-          <li>BFSI</li>
-          <li>B2B</li>
-          <li>Education</li>
-          <li>Healthcare</li>
-        </ul>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-2">
-        <h5 class="fw-bold mb-3">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li>Blog</li>
-          <li>FAQs</li>
-          <li>Web Stories</li>
-          <li>Case Studies</li>
-          <li>Testimonials</li>
-          <li>Portfolio</li>
-          <li>Search Trends Report</li>
-          <li>Digital Report Card</li>
-          <li>BlogX</li>
-          <li>Contact Us</li>
-        </ul>
-      </div>
-    </div>
-
-    <hr class="border-secondary mt-5 mb-3">
-
-    <!-- Bottom Section -->
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-2 mb-md-0">© <span id="year"></span> Techmagnate®. All rights reserved.</p>
-      <div class="d-flex gap-3">
-        <a href="#" class="text-light text-decoration-none">Sitemap</a>
-        <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
-        <a href="#" class="text-light text-decoration-none">CSR Policy</a>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-
-<!-- end of footer  -->
-
- 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

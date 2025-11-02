@@ -17,4 +17,4 @@ jobs:
         run: npm install -g vercel
 
       - name: Deploy to Production
-        run: vercel --prod --token 8IOoB3BKDefB1uFM46XleDIl --yes
+        run: vercel --prod --token 3zWxpa5UawvFgoGK9kNVi3Cl --yes

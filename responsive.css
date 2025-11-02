@@ -1,0 +1,245 @@
+/* topheaderbar for the mobilescreen   */
+@media screen and (max-width:1116px) {
+  .mobilebar {
+    position: fixed !important;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    z-index: 100000000000;
+    box-sizing: border-box;
+
+  }
+
+  .mobilebarpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 60%;
+
+  }
+
+  .fixedfooter {
+    display: block;
+  }
+}
+
+@media screen and (min-width:1116px) {
+  .mobilebar {
+    display: none;
+
+  }
+
+  .fixedfooter {
+    display: none;
+  }
+}
+
+/* media screen for contacthead and the desktop navbar for more flexibility  */
+@media screen and (max-width:1119px) {
+  .desktop-navbar {
+    display: none !important;
+  }
+
+  .contacthead {
+    display: none !important;
+  }
+}
+
+
+/* Responsive adjustments for medium screens */
+@media screen and (max-width: 992px) {
+  .desktop-navbar {
+    flex-wrap: wrap;
+  }
+
+  .sub-menu {
+    gap: 15px;
+  }
+
+  .dropdown-menu-custom {
+    min-width: 200px;
+  }
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 991px) {
+  .header {
+    display: none !important;
+  }
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+
+
+/* For smaller screens (mobile & tablet) hide this header */
+@media (max-width: 991px) {
+  .header {
+    display: none !important;
+  }
+}
+
+/* For large screens ensure nice spacing */
+@media (min-width: 1200px) {
+  .sub-menu {
+    gap: 3rem;
+  }
+}
+
+/* Responsive Hide Desktop Menu */
+@media (max-width: 767px) {
+  .menu.d-md-flex {
+    display: none !important;
+  }
+}
+
+/* resposive for the img  */
+@media screen and (max-width:1173px) {
+  .images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+}
+
+/* resposive for the img  */
+@media screen and (max-width:765px) {
+
+  .swiperleft,
+  .swiperright {
+    display: none !important;
+  }
+}
+
+
+/* ✅ Responsive layout */
+@media (max-width: 900px) {
+  .clienttestimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testileft,
+  .right {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+
+
+  .testimonialimage {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Responsive grid inside swiper slide */
+@media (max-width: 768px) {
+  .award-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .icon-wrapper img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .awards-container {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 1120px) and (max-width: 1350px) {
+  .dropdowncustom2 {
+    position: absolute;
+    top: 44px;
+    right: -593px;
+    width: 1072px;
+    background: #fff;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+}
+
+@media screen and (min-width:788px) and (max-width:1188px) {
+  .reportimg img {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-25%);
+    width: 65%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:788px) {
+  .reportimg img {
+    width: 343px;
+    top: -18px;
+    right: 1px;
+    left: 0% !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .trend-slider-wrapper {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1019px) {
+  .clienttest {
+    flex-direction: column;
+  }
+
+  .leftyside {
+    width: 100%;
+  }
+
+  .rightyside {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:723px) {
+  .responsivelefty {
+    flex-direction: column !important;
+  }
+
+  .frame {
+    margin-left: 120px;
+  }
+
+}
+
+@media (max-width:413px) {
+  .fixedwhatsappbtn {
+    height: 35px !important;
+  }
+}

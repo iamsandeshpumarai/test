@@ -1,0 +1,79 @@
+/* css properties for the mobile hamburger  */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  /* overall width */
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background-color: #025254;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Custom lengths */
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(3) {
+  width: 100%;
+  /* full width for first and last */
+}
+
+.hamburger span:nth-child(2) {
+  width: 70%;
+  /* shorter middle line */
+  margin-left: 15%;
+  /* shift from left */
+}
+
+/* Optional: animate into X when open */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+.crossmark {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.crossmark::before,
+.crossmark::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 4px;
+  /* thickness of the cross */
+  background-color: #015057;
+  /* your desired color */
+  border-radius: 2px;
+  transform-origin: center;
+}
+
+/* Create the X shape */
+.crossmark::before {
+  transform: rotate(45deg);
+}
+
+.crossmark::after {
+  transform: rotate(-45deg);
+}

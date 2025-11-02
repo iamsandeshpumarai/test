@@ -1,44 +1,19 @@
-.w100{
-    width: 100vw;
+.w90{
+    width: 90vw !important;
+}
+.w85{
+    width: 85vw !important;
+}
+.w80{
+    width: 80vw !important;
 }
 
-.w50{
-    width: 50vw;
-}
-.w97{
-    width: 97vw;
-}
-.semititle{
-    font-size:24px;
-}
-.para{
-    font-size: 16px;
-}
-
-.lightblue{
-    background-color: #F5FAFD;
-}
-.font-big{
-    font-size: 40px;
-}
-.font-small{
-    font-size: 16px;
-}
-.font-medium{
-    font-size: 24px;
-}
-.w95{
-    width: 95vw;
-}
-main{
-    width: 95vw;
-    margin: auto;
-    border: 2px solid black;
-    overflow-x: hidden;
-}
-.w-45{
-    width: 45%;
+.h10{
+    height: 10vh;
 }
 .h100{
-    height: 100%;
+    width: 100vh;
+}
+.w100{
+    width: 100vw;
 }
