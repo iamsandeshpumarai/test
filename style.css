@@ -7,7 +7,9 @@
         /* headersection  */
 
 
-
+body{
+  overflow-x:hidden !important ;
+}
 
         /* contacthead css  */
 
